@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Fondo con imagen */
+  .marketplace-container {
+    background-image: url('imagenes/1.png'); /* Asegúrate que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: backgroundFade 2s ease-in-out forwards;
+  }
+  
+  /* Cuadro blanco */
+  .marketplace-box {
+    background-color: #ffffffee;
+    padding: 40px 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%;
+    animation: slideUp 1.3s ease-out;
+  }
+  
+  /* Título */
+  .marketplace-title {
+    font-size: 2.8em;
+    color: #2e8b57;
+    font-weight: bold;
+    margin-bottom: 25px;
+    transition: all 0.4s ease;
+  }
+  
+  .marketplace-title:hover {
+    color: #fff;
+    background-color: #2e8b57;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #2e8b57;
+    cursor: pointer;
+  }
+  
+  /* Lista de beneficios */
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .benefit-item {
+    font-size: 1.3em;
+    color: #333;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 0.6s forwards;
+  }
+  
+  /* Delay animación */
+  .benefit-item:nth-child(1) { animation-delay: 0.4s; }
+  .benefit-item:nth-child(2) { animation-delay: 0.6s; }
+  .benefit-item:nth-child(3) { animation-delay: 0.8s; }
+  .benefit-item:nth-child(4) { animation-delay: 1s; }
+  
+  /* Efecto hover */
+  .benefit-item:hover {
+    background-color: #d4edda;
+    color: #155724;
+    font-size: 1.4em;
+    box-shadow: 0 0 15px rgba(46, 139, 87, 0.3);
+    cursor: pointer;
+  }
+  
+  /* Animaciones */
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes backgroundFade {
+    0% {
+      filter: brightness(0.6);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
+  

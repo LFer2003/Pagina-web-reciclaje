@@ -1,0 +1,32 @@
+.incentive-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espacio entre los botones */
+  margin-top: 40px;  /* Espacio superior aumentado */
+  margin-bottom: 30px; /* Espacio inferior si lo necesitas */
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  background-color: #34520D;
+  color: white;
+  border: none;
+  padding: 15px 40px; /* Mayor espacio dentro del botón */
+  font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+  border-radius: 50px; /* Botón con bordes más redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Sombra más prominente */
+}
+
+.action-btn:hover {
+  background-color: #FCC509;
+  transform: translateY(-5px); /* Efecto más notorio cuando el mouse pasa sobre el botón */
+  color: black; /* Cambia el color de la letra a negro al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más profunda */
+}
+
+.incentive-buttons {
+  margin-top: 40px; /* Puedes aumentar aún más si deseas mayor separación */
+  text-align: center; /* Centrar los botones */
+}

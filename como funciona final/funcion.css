@@ -1,0 +1,414 @@
+/* Sección Cómo Funciona */
+.como-funciona {
+    padding: 40px 20px;
+    background: url("img funciona/fondo1.png") no-repeat center/cover;
+    position: relative;
+  }
+  
+  .titulo-principal {
+    font-size: 2rem;
+    color: #5E7C34;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #5E7C34;
+    font-family: 'Arial Black', sans-serif;
+  }
+  
+  .descripcion {
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin: 20px auto;
+    color: #333;
+  }
+  /* Establecer fuente global para toda la página */
+  body {
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  p {
+    font-family: 'Arial', sans-serif; 
+  }
+  /* Carrusel */
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 65vh;
+    max-height: 600px;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .carousel-caption {
+    bottom: 20%;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 2rem;
+    color: #C2D6DC;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px #000;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 4px #000;
+    margin-top: 10px;
+  }
+  
+  .bg-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 20px 30px;
+    animation: fadeInUp 1s ease-in-out;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Pasos */
+  .pasos {
+    max-width: 850px;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .numero {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .verde {
+    color: #406503;
+  }
+  
+/* Botón */
+.btn-join {
+  background-color: #406503;
+  border: none;
+  font-weight: bold;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Efecto al pasar el mouse */
+.btn-join:hover {
+  background-color: #f4c542; /* Amarillo */
+  color: #000000;               /* Letra blanca */
+  text-decoration: none;     /* Asegura que no haya subrayado */
+}
+
+  
+  
+  /* Imagen inferior */
+  .img-chica {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 400px;
+  }
+  
+  .img-chica img {
+    width: 100%;
+  }
+  
+  /* Sección Qué Ofrecemos */
+  .que-ofrecemos {
+    background-color: #dbe8c7ad;
+    padding: 60px 20px;
+  }
+  
+  .ropa .carousel-inner img {
+    max-height: 560px;
+    object-fit: cover;
+  }
+  
+  /* Subtítulo */
+  .subtitulo {
+    font-size: 2rem;
+    color: #5E7C34;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #5E7C34;
+    font-family: 'Arial Black', sans-serif;
+    text-align: left;
+  }
+  
+  /* Oferta */
+  .oferta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .oferta .texto,
+  .textodos {
+    flex: 1 1 45%;
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .oferta .texto {
+    max-width: 500px;
+    margin-left: 20px;
+  }
+  
+  .textodos {
+    text-align: end;
+  }
+  
+  .oferta .imagen {
+    flex: 1 1 45%;
+  }
+  
+  .oferta .imagen img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Beneficios */
+  .Beneficios {
+    background-color: #a6b5957e;
+    padding: 60px 20px;
+  }
+  
+  .imagen {
+    max-width: 400px;
+  }
+  
+  .carousel-inner img {
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Video */
+  .video {
+    width: 100%;
+    background: url("img funciona/fondo1.png") no-repeat center/cover;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .video-section {
+    background-color: #f5fdf4;
+  }
+  
+  .video-section h3 {
+    color: #2f6630;
+  }
+  
+  .video-section p {
+    color: #2d2d2d;
+    font-size: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .titulo-principal {
+      font-size: 2rem;
+    }
+  
+    .btn-join {
+      width: 100%;
+    }
+  
+    .img-chica {
+      position: static;
+      margin-top: 30px;
+    }
+  
+    .oferta {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .oferta .texto,
+    .oferta .imagen {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Grid de Ofertas */
+  .ofertas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .card {
+    width: 18rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .destacado {
+    background-color: rgba(107, 240, 90, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .img-cambia {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  /* Animaciones personalizadas */
+  .ropa {
+    animation-name: animarRopa;
+  }
+  @keyframes animarRopa {
+    0%   { background-image: url('img nos/ropa1.jpg'); }
+    50%  { background-image: url('img nos/ropa4.jpg'); }
+    100% { background-image: url('img nos/ropa3.jpg'); }
+  }
+  
+  .reciclaje {
+    animation-name: animarReciclaje;
+  }
+  @keyframes animarReciclaje {
+    0%   { background-image: url('img nos/reciclaje.webp'); }
+    50%  { background-image: url('img nos/plastico..jpg'); }
+    100% { background-image: url('img nos/reciclaje.webp'); }
+  }
+  
+  .beneficios {
+    animation-name: animarBeneficios;
+  }
+  @keyframes animarBeneficios {
+    0%   { background-image: url('img nos/promociones 3.jpg'); }
+    50%  { background-image: url('img nos/descuento.webp'); }
+    100% { background-image: url('img nos/descuento 2.jpg'); }
+  }
+  
+  .regalos {
+    animation-name: animarRegalos;
+  }
+  @keyframes animarRegalos {
+    0%   { background-image: url('img nos/figura1.jpg'); }
+    50%  { background-image: url('img nos/figura2.jpg'); }
+    100% { background-image: url('img nos/figura3.jpg'); }
+  }
+  
+  /* Más beneficios */
+  .mas-beneficios {
+    background-color: #e4f1dc;
+    padding: 60px 0;
+  }
+  
+  .mas-beneficios h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #305918;
+  }
+  
+  .mas-beneficios .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  /* Beneficio individual */
+  .beneficio p {
+    font-size: 1rem;
+    color: #555;
+  }
+  .img-uniforme {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Título de sección */
+  .titulo-seccion {
+    font-size: 2rem;
+    color: #5E7C34;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #5E7C34;
+    font-family: 'Arial Black', sans-serif;
+  }
+  
+  /* Subtítulo numerado */
+  .oferta h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  /* Párrafo de la descripción */
+  .oferta p {
+    font-size: 1rem;
+    color: #2d2d2d;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  /* Animación de temblor */
+  @keyframes temblor {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  

@@ -1,0 +1,864 @@
+/* Aplicando el fondo solo al body */
+body {
+    background-image: url('img/fo1.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Asegura que ocupe toda la altura de la ventana */
+}
+
+
+
+/* Contenedor de los botones y demás elementos */
+.container-fluid {
+    position: relative;  /* Esto asegura que los botones se sitúen sobre la imagen de fondo */
+    z-index: 10;  /* Asegura que los botones estén encima */
+    padding: 0;  /* Sin márgenes ni rellenos */
+    width: 100%;  /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+/* Coloca los botones sobre la imagen */
+.contenedor {
+    position: absolute;
+    top: 50%;  /* Para centrarlo verticalmente */
+    left: 50%;  /* Para centrarlo horizontalmente */
+    transform: translate(-50%, -50%);  /* Ajuste fino para centrar */
+    z-index: 100;  /* Los botones estarán encima de la imagen */
+    text-align: center;  /* Centra los botones */
+    width: 100%;
+}
+
+/* Asegura que los botones se muestren de manera estilizada */
+.btn-custom {
+    background-color: rgba(0, 0, 0, 0.6);  /* Fondo oscuro para los botones */
+    color: white;  /* Texto blanco */
+    border: none;
+    padding: 15px 30px;  /* Aseguramos que el botón tenga buen tamaño */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;  /* Ajustar tamaño de fuente */
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: rgba(0, 0, 0, 0.8);  /* Cambiar color de fondo al pasar el mouse */
+}
+
+/* Para que los botones cambien en pantallas pequeñas */
+@media (max-width: 768px) {
+    .btn-custom {
+        font-size: 1rem;  /* Reducir el tamaño de la fuente en pantallas más pequeñas */
+        padding: 12px 24px;  /* Ajuste de padding para que los botones no se vean tan grandes */
+    }
+}
+
+/* Estilo global para los botones */
+.btn-custom {
+    background-color: #34520D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover, .btn-custom:focus {
+    background-color: #FCC509;
+    color: white;
+    outline: none;
+}
+
+.btn-custom:active {
+    background-color: #34520D;
+
+}
+
+
+
+/* Estilo para el botón 'Registrar' */
+.btn-secondary.btn-custom {
+    background-color: #34520D;
+    color: white;  /* Texto blanco por defecto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* Transición solo en el color del texto */
+}
+
+.btn-secondary.btn-custom:hover, .btn-secondary.btn-custom:focus {
+    background-color: #FCC509; /* Fondo amarillo */
+    color: #000000; /* Cambiar color del texto a negro */
+}
+
+/* Estilo para el botón hamburguesa (Menú) */
+.btn-dark.btn-custom {
+    background-color: #34520D;
+    color: white;
+    border: none;
+}
+
+.btn-dark.btn-custom:hover, .btn-dark.btn-custom:focus {
+    background-color: #FCC509;
+    color: white;
+    
+}
+
+.btn-dark.btn-custom:active {
+    background-color: #34520D;
+}
+
+/* Menú desplegable y opciones */
+.dropdown-menu {
+    background-color: #34520D; /* Fondo verde */
+    border-radius: 5px;
+    border: none;
+}
+
+.dropdown-item {
+    color: white; /* Texto blanco */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #FCC509; /* Amarillo cuando se pasa el mouse */
+    color: white; /* Texto blanco */
+    
+}
+
+
+/* Asegura que el logo mantenga un tamaño consistente */
+.logo {
+    height: 60px; /* Ajusta el tamaño a tu preferencia */
+    width: auto;
+    max-width: 100%; /* Se asegura de que el logo no exceda el ancho disponible */
+}
+
+/* Para dispositivos móviles, ajustamos el tamaño del logo */
+@media (max-width: 768px) {
+    .logo {
+        height: 50px; /* Reducimos el tamaño del logo en pantallas pequeñas */
+    }
+}
+
+/* Aseguramos que los botones mantengan el mismo estilo */
+.btn-custom, .btn {
+    font-size: 1.1rem; /* Tamaño de texto más grande */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón hamburguesa (Menú) */
+.btn-dark.btn-custom {
+    background-color:#34520D;  /* Cambiar a color de tu preferencia */
+    color: rgb(255, 255, 255);  /* Color del texto */
+    border: none;
+}
+
+.btn-dark.btn-custom:hover, .btn-dark.btn-custom:focus {
+    background-color: #FCC509;  /* Color del fondo cuando se pasa el cursor */
+    color: rgb(0, 0, 0);  /* Color del texto cuando se pasa el cursor */
+}
+
+.btn-dark.btn-custom:active {
+    background-color: #85b5c9;  /* Color del fondo cuando se hace clic */
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+    background-color: #FCC509;  /* Color de fondo del menú desplegable */
+    border-radius: 5px;
+    border: none;
+}
+
+.dropdown-item {
+    color: rgb(0, 0, 0);  /* Color del texto de las opciones del menú */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color:#34520D;  /* Fondo cuando se pasa el cursor sobre las opciones */
+    color: white;  /* Color del texto */
+    
+}
+
+/* Hacer que la imagen de fondo sea completamente responsiva */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Se quita el efecto de fijación para móviles */
+        background-size: cover; /* Asegura que la imagen se adapte bien a pantallas más pequeñas */
+    }
+
+    /* Para dispositivos móviles, se pueden ajustar otros elementos si es necesario */
+    .contenedor {
+        padding: 20px; /* Añadir algo de espacio en pantallas pequeñas */
+    }
+}
+
+/* Cambiar solo el color del texto al pasar el mouse */
+.btn-custom:hover {
+    color: #000000;  /* Cambiar el color del texto a amarillo */
+}
+.btn-custom {
+    background-color: #34520D;  /* Fondo verde oscuro para los botones */
+    color: white;  /* Texto blanco */
+    border: none;
+    padding: 15px 30px;  /* Asegura que los botones tengan buen tamaño */
+    font-size: 1.2rem;  /* Ajustar tamaño de fuente */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 5px;  /* Añadir espacio entre los botones */
+    text-align: center;  /* Asegura que el texto del botón esté centrado */
+}
+
+.logo {
+    height: 100px; /* Ajusta la altura del logo a tu preferencia */
+    width: auto;  /* El ancho se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Se asegura de que el logo no exceda el ancho disponible */}
+
+    .encabezado {
+        background-image: url('img/tu-imagen.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        color: white;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .boton-estatico {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn-custom {
+        font-size: 18px;
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    
+    .imagen-grande {
+        background-image: url('img/tu-imagen.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        color: white;
+      }
+      
+      .boton-estatico {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .btn-custom {
+        font-size: 20px;
+        padding: 15px 30px;
+        height: 60px;
+      }
+      
+      /* Sección de abajo */
+      .seccion-transforma {
+        padding: 50px 0;
+        background-color: #f4f4f4;
+      }
+      
+      .seccion-transforma h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      
+      .seccion-transforma p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      
+      .seccion-transforma .img-fluid {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      
+      .bloque-boton {
+        position: relative; /* Importante para que el botón se posicione dentro de este */
+        height: 500px;       /* Ajusta la altura según necesites */
+        background-color: #f4f4f4; /* Solo para visualizar */
+      }
+      
+      .boton-fijo {
+        position: absolute; /* Permite mover con top y left */
+        top: 100px;          /* Sube o baja el botón */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+      }
+      
+      .btn-custom {
+        font-size: 18px;
+        padding: 12px 25px;
+        height: auto;
+        background-color: #34520D;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        animation: buttonAppear 0.8s ease-out;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .btn-custom:hover {
+        background-color: #FFD700; /* Amarillo */
+        color: #000;
+        transform: translateY(-5px) scale(1.05);
+      }
+      @keyframes buttonAppear {
+        0% {
+          opacity: 0;
+          transform: translateY(30px) scale(0.9);
+        }
+        60% {
+          opacity: 1;
+          transform: translateY(-10px) scale(1.05);
+        }
+        100% {
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      
+/carrito/
+
+  
+  
+  /* EFECTO HOVER PARA AGRANDAR */
+  .carrito-animado:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ANIMACIÓN DE PULSO PARA LA BOLITA DEL CONTADOR */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .badge-pulso {
+    animation: pulse 1.5s infinite;
+  }
+  
+
+
+
+/* 1. Estilos normales para enlaces del menú */
+.nav-link {
+    color: #34520D !important;
+    transition: all 0.3s ease;
+    font-weight: bold; /* 👈 aquí */
+  }
+  
+  /* 2. Hover de enlaces */
+  .nav-link:hover {
+    background-color: #FFD700;
+    color: black !important;
+  }
+  
+  /* 3. Botón de menú hamburguesa */
+  .btn-outline-dark {
+    background-color: #34520D;
+    color: white;
+    border-color: #34520D;
+    transition: all 0.3s ease;
+    font-weight: bold; /* 👈 aquí */
+  }
+  
+  /* 4. Hover del botón de menú (cuando se hace click y se muestra el dropdown) */
+  .btn-outline-dark:active,
+  .btn-outline-dark:focus,
+  .btn-outline-dark:hover {
+    background-color: #FFD700;
+    color: black;
+    border-color: #FFD700;
+  }
+  
+  /* 5. Dropdown items */
+  .dropdown-menu .dropdown-item {
+    color: #34520D;
+    transition: all 0.3s ease;
+    font-weight: bold; /* 👈 aquí */
+  }
+  
+  /* 6. Hover de dropdown items */
+  .dropdown-menu .dropdown-item:hover,
+  .dropdown-menu .dropdown-item:focus {
+    background-color: #34520D;
+    color: rgb(255, 255, 255);
+  }
+
+  
+  .nav-link,
+.btn-outline-dark,
+.dropdown-menu .dropdown-item {
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 0 0 transparent;
+}
+
+.nav-link:hover,
+.btn-outline-dark:hover,
+.dropdown-menu .dropdown-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estructura base del botón hamburguesa */
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    z-index: 999;
+  }
+  
+  .toggler-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #34520D;
+    transition: all 0.4s ease;
+    display: block;
+    border-radius: 2px;
+  }
+  
+  /* Al activar el menú, cambiar el icono a "X" */
+  .custom-toggler.collapsed .top-bar {
+    transform: rotate(0) translateY(0);
+  }
+  
+  .custom-toggler:not(.collapsed) .top-bar {
+    transform: rotate(45deg) translateY(7px);
+  }
+  
+  .custom-toggler:not(.collapsed) .middle-bar {
+    opacity: 0;
+  }
+  
+  .custom-toggler:not(.collapsed) .bottom-bar {
+    transform: rotate(-45deg) translateY(-7px);
+  }
+
+
+
+  
+
+
+  .barra-superior {
+    background-color: white; /* Fondo blanco para el encabezado */
+    position: fixed; /* Para que la barra se quede en la parte superior al hacer scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .barra-superior .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Ajusta el padding según necesites */
+  }
+  
+  .barra-superior .d-flex.align-items-center.gap-3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Ajusta el espacio entre el logo y los botones */
+  }
+  
+  /* Si tienes estilos específicos para los botones "Inicio" y "Registrarse",
+     el carrito o los enlaces de navegación, esos deberían estar en otros selectores
+     y no deberían verse afectados por este cambio en .barra-superior. */
+
+
+     
+
+     body {
+        background: url('imagenes/mejora\ del\ fondo.png') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .form-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        padding-top: 80px; /* Esta línea ya existe, la vamos a ajustar */
+        margin-top: 60px; /* Agrega esta línea para crear un margen superior */
+      }
+    .form-box {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .form-box h1 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 28px;
+        color: #2d4018;
+    }
+    .form-group {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        width: 100%;
+        padding: 10px 40px 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    .form-group::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+    }
+    #email + .icon::after {
+        content: '\2709';
+    }
+    #password + .icon::after {
+        content: '\1F512';
+    }
+    .checkbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    .btn-login {
+        width: 100%;
+        padding: 10px;
+        background-color: #556b2f;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .btn-login {
+        width: 100%;
+        padding: 10px;
+        background-color: #556b2f; /* Color de fondo inicial (verde oscuro) */
+        color: white; /* Color de texto inicial (blanco) */
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; /* Añadimos transición para el color del texto */
+    }
+    
+    .btn-login:hover {
+        background-color: #fdc504; /* Color de fondo al pasar el ratón (amarillo) */
+        color: black; /* Color del texto al pasar el ratón (negro) */
+    }
+    .btn-login {
+        width: 100%;
+        padding: 10px;
+        background-color: #556b2f; /* Color de fondo inicial (verde oscuro) */
+        color: white; /* Color de texto inicial (blanco) */
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out; /* Asegúrate de tener la transición para transform */
+    }
+    
+    .btn-login:hover {
+        background-color: #fdc504; /* Color de fondo al pasar el ratón (amarillo) */
+        color: black; /* Color del texto al pasar el ratón (negro) */
+        transform: scale(1.03); /* Escala el botón ligeramente al pasar el ratón */
+    }
+    .registro-link {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .logo-center {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .logo-center img {
+        height: 70px;
+    }
+    .join-text {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #2d4018;
+    }
+    
+    .form-box input {
+        width: 100%;
+        padding: 10px 40px 10px 10px; /* Manteniendo el padding existente */
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out; /* Añadimos la transición para la transformación */
+    }
+    
+    .form-box input:hover {
+        transform: scale(1.02); /* Escala el campo ligeramente al pasar el ratón (2% más grande) */
+        border-color: #778b5e; /* O un color ligeramente diferente al hacer hover */
+        box-shadow: 0 0 7px rgba(85, 107, 47, 0.3); /* Una sombra sutil al hacer hover */
+    }
+    
+    .form-box input:focus {
+        transform: scale(1.02); /* También aplicamos un ligero crecimiento al enfocar */
+        border-color: #556b2f;
+        outline: none;
+        box-shadow: 0 0 5px rgba(85, 107, 47, 0.5);
+    }
+    /* Estilos del pie de página  */
+    .footer {
+        background-image: url('imagenes/Fondo\ de\ pie\ de\ página.jpg'); /* Aquí agregas la imagen de fondo */
+        background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+        background-position: center; /* Centra la imagen de fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        padding: 20px 0;
+        width: 100vw; 
+        color: #333;
+        font-family: Arial, sans-serif;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .footer-left {
+        flex: 1;
+    }
+    
+    .footer-logo {
+        width: 130px; /* Ajusta el tamaño de tu logo */
+        height: auto;
+    }
+    
+    .form-box .logo-login {
+        display: flex; /* Convierte el contenedor en un flex container */
+        flex-direction: column; /* Alinea los elementos internos en columna (logo y texto) */
+        align-items: center; /* Centra los elementos horizontalmente dentro del contenedor */
+        margin-bottom: 20px; /* Mantén el margen inferior que ya tenías */
+    }
+    
+    .form-box .logo-login img {
+        height: 70px; /* O el tamaño que finalmente hayas elegido */
+        width: auto;
+        margin-bottom: 10px; /* Espacio entre el logo y el texto "ÚNETE A LA FAMILIA" */
+    }
+    
+    .form-box .logo-login .join-text {
+        text-align: center; /* Asegúrate de que el texto también esté centrado */
+        font-weight: bold;
+        color: #2d4018;
+        font-size: 16px;
+    }
+    
+    .footer-center {
+        flex: 2;
+        text-align: center;
+    }
+    
+    .footer-link {
+        color: #34520D; /* Verde */
+        text-decoration: underline;
+        margin: 0 15px;
+        font-size: 16px;
+    }
+    
+    .footer-right {
+        flex: 1;
+        text-align: right;
+    }
+    
+    .footer-social-icon {
+        margin-left: 15px;
+        display: inline-block;
+    }
+    
+    .footer-social-icon img {
+        width: 30px; /* Ajusta el tamaño de los íconos */
+        height: auto;
+    }
+    
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .footer-left, .footer-center, .footer-right {
+            flex: none;
+            margin-bottom: 10px;
+        }
+    
+        .footer-right {
+            margin-top: 10px;
+        }
+    }
+    </style>
+    </head>
+
+
+
+    /* Estilo para el pie de página */
+.footer {
+    background-image: url('imagenes/piedepagina.png'); /* Imagen de fondo */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    animation: fadeInFooter 1.5s ease-in-out;
+}
+
+/* Animación para aparecer suavemente */
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 150px; /* Tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-center {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-link {
+    color: #34520D; /* Verde */
+    text-decoration: underline;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-social-icon {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.footer-social-icon img {
+    width: 30px; /* Tamaño de íconos */
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icon img:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        flex: none;
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Estilo para los botones de redes sociales */
+.footer-social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto al pasar el mouse por encima */
+  .footer-social-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del icono */
+    opacity: 0.8; /* Agrega un efecto de desvanecimiento */
+  }
+  
+  /* Opcional: efecto de color de fondo o sombra al pasar el mouse */
+  .footer-social-icon:hover img {
+    filter: brightness(1.2); /* Aumenta el brillo de la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+  }
+  
+
+  .footer-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain; /* por si acaso el contenedor fuerza */
+  }

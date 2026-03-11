@@ -1,0 +1,45 @@
+body { background: #f7f9fc; }
+
+/* Banda transportadora estilo simple */
+.conveyor {
+  position: relative;
+  height: 80px;
+  background: linear-gradient(90deg,#ddd 25%, #eee 25%, #eee 50%, #ddd 50%, #ddd 75%, #eee 75%, #eee 100%);
+  background-size: 60px 60px;
+  overflow: hidden;
+  border-radius: 6px;
+  display:flex;
+  align-items:center;
+  padding: 8px;
+}
+
+.conveyor-item {
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 12px;
+  background: #0d6efd;
+  color: white;
+  border-radius: 4px;
+  font-weight:600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Animación (se activa por JS) */
+.move {
+  animation: moveItem 3s linear infinite;
+}
+
+@keyframes moveItem {
+  0% { left: -120px; opacity: 0.9; transform: translateY(-50%) scale(0.95); }
+  50% { opacity: 1; }
+  100% { left: calc(100% + 40px); opacity: 0.9; transform: translateY(-50%) scale(0.95); }
+}
+
+/* lectura y clasificación */
+#weight { font-family: monospace; color: #0b5ed7; }
+#classification { font-weight: 700; color: #198754; }
+#classification.plastico { color: #0d6efd; }
+#classification.papel { color: #6f42c1; }
+#classification.metal { color: #6c757d; }

@@ -1,0 +1,244 @@
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f4fdf6;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+    color: #34520D;
+    margin-top: 40px;
+  }
+
+  .testimonios {
+    padding: 40px 20px;
+  }
+
+  .tarjetas-testimonio {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta {
+    background: #e8f5e9;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+
+  .consejo-semanal {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 12px;
+    width: 80%;
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .galeria img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  /* Suscripción con color de fondo y texto blanco */
+  .newsletter {
+    background-color: #34520D; /* Color de fondo */
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    color: white; /* Color de texto blanco */
+  }
+
+  .newsletter input[type=email] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+    font-size: 1rem;
+  }
+
+  .newsletter button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #FFD700;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1rem;
+  }
+
+  .boton:hover {
+    background-color: #45a049;
+  }
+  
+  .contenedor-botones {
+    text-align: center;
+    margin-top: 30px;
+    
+  }
+
+  /* Información */
+  .info-texto {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #000000;
+    border-left: 6px solid #000000;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color: #34520D;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none; /* Estará oculto al inicio */
+  }
+
+  .info-texto h3 {
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+  .oculto {
+    display: none;
+  }
+
+  /* Animación para aparecer y desaparecer contenido */
+  .contenedor h2 {
+    animation: slideIn 1s ease-out;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white; /* Aquí agregué el color blanco al título */
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .imagen {
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  .contenedor {
+    position: relative;
+  }
+
+  .contenedor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+
+/* Newsletter */
+.newsletter {
+    background-color: #34520D; /* Color de fondo */
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    color: white; /* Color de texto blanco */
+  }
+  
+  .newsletter h2 {
+    color: white; /* Asegura que el título h2 sea blanco */
+  }
+  
+  .newsletter input[type=email] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+    font-size: 1rem;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #FFD700;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1rem;
+  }
+/* Newsletter */
+.newsletter {
+    background-color: #34520D; /* Color de fondo */
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    color: white; /* Color de texto blanco */
+  }
+  
+  .newsletter h2 {
+    color: white; /* Asegura que el título h2 sea blanco */
+  }
+  
+  .newsletter input[type=email] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+    font-size: 1rem;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #FFD700;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #ffcc00; /* Color al pasar el mouse */
+  }
+  
+  #confirmation-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: green;
+  }
+    
+
+
+  

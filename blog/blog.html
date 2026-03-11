@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+  <!-- Tus hojas de estilo personalizadas -->
+  <link rel="stylesheet" href="encabezado.css" />
+  <link rel="stylesheet" href="1.css" />
+  <link rel="stylesheet" href="carruse.css">
+  <link rel="stylesheet" href="tarjeta.css">
+  <link rel="stylesheet" href="botones.css">
+
+
+  <link rel="stylesheet" href="piedepagina.css" />
+  <link rel="stylesheet" href="estilos.css" />
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="s.js"></script>
+</head>
+<body>
+
+  <!-- Barra superior fija -->
+  <header class="barra-superior">
+    <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
+      <div class="d-flex align-items-center gap-3">
+        <a href="/proyecto.html">
+          <img src="/blog\imagenes\lOGO.png" class="logo" alt="Logo" style="height: 80px;">
+        </a>        
+      
+        <div class="dropdown">
+        
+            <button class="btn btn-secondary btn-custom dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Únete
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="/inisioseccion/iniciodesesio.html">Iniciar sesión</a></li>
+              <li><a class="dropdown-item" href="/registro/registro.html">Registrarse</a></li>
+          </ul>
+        </div>
+        <a href="/carrito/carrito.html" class="position-relative carrito-animado">
+          <img src="imagenes/carro de compras.png" alt="Carrito de compras" style="width: 40px;">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success badge-pulso">
+            3
+            <span class="visually-hidden">productos en el carrito</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Menú grande -->
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item"><a class="nav-link text-dark" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/contactanos/contactanosf.html">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/como funciona/comofunciona.html">Cómo Comprar</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/blog/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/comprar/comprar.html">Marketplace</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/incentivos/incentivos.html">Incentivos</a></li>
+        </ul>
+      <!-- Menú móvil -->
+      <div class="dropdown d-md-none ms-auto">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          ☰ Menú
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+          <li><a class="dropdown-item" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
+          <li><a class="dropdown-item" href="/contactanos/contactanosf.html">Contáctanos</a></li>
+          <li><a class="dropdown-item" href="/nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+          <li><a class="dropdown-item" href="/como funciona/comofunciona.html">Cómo Comprar</a></li>
+          <li><a class="dropdown-item" href="/blog/blog.html">Blog</a></li>
+          <li><a class="dropdown-item" href="/comprar/comprar.html">Marketplace</a></li>
+          <li><a class="dropdown-item" href="/incentivos/incentivos.html">Incentivos</a></li>
+        </ul>
+      </div>    
+            </div>
+          </header>
+  <!-- Sección de bienvenida -->
+  <div class="bienvenida-container">
+    <div class="bienvenida-texto">
+        
+      <h1>¡Bienvenidos a ENDLE$S!</h1> 
+      <p>
+        En este espacio, nos unimos para explorar el fascinante mundo de la moda sostenible y el reciclaje.  
+        Creemos firmemente que cada prenda tiene una historia que contar y que, al darle una segunda vida a nuestras cosas,  
+        no solo cuidamos del planeta, sino que también fomentamos un estilo único y personal.
+      </p>
+    </div>
+  </div>
+
+  <!-- carrusel-->
+
+  <div id="carouselExample" class="carousel slide carrusel-personalizado" data-bs-ride="carousel">
+    <!-- contenido de las slides aquí -->
+  </div>
+  
+  
+    </div>
+   <!-- Carrusel -->
+<div id="carouselExample" class="carousel slide carrusel-personalizado" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 500px;">
+            <h2 class="text-center mt-4 mb-3 text-white">Consejos sostenibles para un estilo de vida ecológico</h2>
+
+  
+          <div class="image-accordion">
+            <div class="panel" style="background-image: url('imagenes/bolsa.jpg');">
+              <div class="content">
+                <h3>1. Reduce Plásticos</h3>
+                <p>Usa bolsas reutilizables y botellas de acero inoxidable.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/recilarropa.jpeg');">
+              <div class="content">
+                <h3>2. Compra Segunda Mano</h3>
+                <p>Opta por ropa reciclada en tiendas de segunda mano.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/compost.jpg');">
+              <div class="content">
+                <h3>3. Haz Compost</h3>
+                <p>Aprovecha restos de comida para enriquecer el suelo.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/productoslocales.jpg');">
+              <div class="content">
+                <h3>4. Elige Productos Locales</h3>
+                <p>Apoya negocios cercanos y reduce la huella de carbono.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/reparar.jpg');">
+              <div class="content">
+                <h3>5. Repara en Lugar de Desechar</h3>
+                <p>Arregla objetos en vez de tirarlos.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/armariocapsula.jpg');">
+              <div class="content">
+                <h3>6. Armario Cápsula</h3>
+                <p>Invierte en prendas versátiles y básicas.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/apagarenchufe.jpg');">
+              <div class="content">
+                <h3>7. Apaga y Desenchufa</h3>
+                <p>Ahorra energía apagando luces y dispositivos.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/productosdelimpieza.jpg');">
+              <div class="content">
+                <h3>8. Limpieza Natural</h3>
+                <p>Usa productos de limpieza ecológicos.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/proyectoecologico.jpg');">
+              <div class="content">
+                <h3>9. Proyectos Comunitarios</h3>
+                <p>Únete a limpiezas o reforestaciones locales.</p>
+              </div>
+            </div>
+            <div class="panel" style="background-image: url('imagenes/educar.webp');">
+              <div class="content">
+                <h3>10. Infórmate y Comparte</h3>
+                <p>Educa a otros sobre sostenibilidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <!-- Imagen de fondo que va justo debajo del carrusel -->
+<div class="fondo-imagen"></div>
+
+<style>
+  .fondo-imagen {
+    width: 100%;
+    height: 300px; /* Puedes ajustar esto */
+    background-image: url('imagenes/fondo.jpg'); /* Cambia si quieres otra */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+ <!-- tarejtas -->
+ <div class="event-title">Eventos Ecológicos</div>
+
+    <!-- Contenedor de eventos -->
+    <div class="event-container">
+        <!-- Tarjeta de Cine al Aire Libre -->
+        <div class="event-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Cine al Aire Libre</h3>
+                    <p>Documentales Ecológicos</p>
+                </div>
+                <div class="card-back">
+                    <h3>Cine al Aire Libre</h3>
+                    <p><strong>Fecha:</strong> 28 de abril de 2025</p>
+                    <p><strong>Hora:</strong> 6:00 p.m.</p>
+                    <p><strong>Ubicación:</strong> Parque Ecológico de la Montaña, Bogotá</p>
+                    <p><strong>Descripción:</strong> Disfruta de documentales sobre medio ambiente y sostenibilidad al aire libre. Habrá charlas de expertos y actividades interactivas.</p>
+                    <p><strong>Entrada:</strong> Libre, trae manta o silla.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Rutas Culturales por el Reciclaje -->
+        <div class="event-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Rutas Culturales</h3>
+                    <p>Por el Reciclaje</p>
+                </div>
+                <div class="card-back">
+                    <h3>Rutas Culturales por el Reciclaje</h3>
+                    <p><strong>Fecha:</strong> 2 de mayo de 2025</p>
+                    <p><strong>Hora:</strong> 10:00 a.m.</p>
+                    <p><strong>Ubicación:</strong> Plaza Central, Bogotá</p>
+                    <p><strong>Descripción:</strong> Recorrido por tiendas y proyectos ecológicos en Bogotá, promoviendo la sostenibilidad y el reciclaje.</p>
+                    <p><strong>Costo:</strong> $10,000 por persona.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Mercado de Trueque -->
+        <div class="event-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Mercado de Trueque</h3>
+                    <p>Intercambio Responsable</p>
+                </div>
+                <div class="card-back">
+                    <h3>Mercado de Trueque</h3>
+                    <p><strong>Fecha:</strong> 15 de mayo de 2025</p>
+                    <p><strong>Hora:</strong> 9:00 a.m. - 3:00 p.m.</p>
+                    <p><strong>Ubicación:</strong> Parque La Felicidad, Bogotá</p>
+                    <p><strong>Descripción:</strong> Intercambia objetos, ropa y libros en buen estado. Promovemos la reutilización y el consumo responsable.</p>
+                    <p><strong>Entrada:</strong> Gratuita, trae un artículo para intercambiar.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Taller de Reciclaje Creativo -->
+        <div class="event-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Taller de Reciclaje</h3>
+                    <p>Creativo y Sostenible</p>
+                </div>
+                <div class="card-back">
+                    <h3>Taller de Reciclaje Creativo</h3>
+                    <p><strong>Fecha:</strong> 22 de mayo de 2025</p>
+                    <p><strong>Hora:</strong> 11:00 a.m.</p>
+                    <p><strong>Ubicación:</strong> Centro de Artes Ecológicas, Bogotá</p>
+                    <p><strong>Descripción:</strong> Aprende a crear objetos útiles y decorativos con materiales reciclados. Una forma divertida de contribuir al medio ambiente.</p>
+                    <p><strong>Costo:</strong> $15,000 por persona.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de Feria Verde -->
+        <div class="event-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Feria Verde</h3>
+                    <p>Productos Ecológicos</p>
+                </div>
+                <div class="card-back">
+                    <h3>Feria Verde</h3>
+                    <p><strong>Fecha:</strong> 5 de junio de 2025</p>
+                    <p><strong>Hora:</strong> 9:00 a.m. - 5:00 p.m.</p>
+                    <p><strong>Ubicación:</strong> Parque El Chicó, Bogotá</p>
+                    <p><strong>Descripción:</strong> Disfruta de productos ecológicos, alimentos orgánicos y artículos sustentables. También habrá charlas sobre sostenibilidad.</p>
+                    <p><strong>Entrada:</strong> Gratuita.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+
+    <title>Botones con contenido desplegable</title>
+    <style>
+      body {
+       
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f4fdf6;
+  margin: 0;
+  padding: 0; /* esto elimina la "margen fea" */
+}
+
+      
+  
+      .contenedor-botones {
+        text-align: center;
+        margin-top: 30px;
+      }
+  
+      .boton {
+        background-color: #2b4f2c;
+        color: white;
+        padding: 14px 28px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 10px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      }
+  
+      .boton:hover {
+        background-color: #45a049;
+      }
+  
+      .contenido {
+        display: none;
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-left: 6px solid #4CAF50;
+        border-radius: 8px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="contenedor-botones">
+      <button class="boton" onclick="mostrarContenido('moda')">La moda sostenible es el futuro</button>
+      <button class="boton" onclick="mostrarContenido('razones')">Razones para comprar ropa reciclada</button>
+    </div>
+  
+    <div id="moda" class="contenido">
+      <p>La moda sostenible busca reducir el impacto ambiental mediante el uso de materiales reciclados y procesos éticos.</p>
+    </div>
+  
+    <div id="razones" class="contenido">
+      <p>Comprar ropa reciclada ayuda a reducir residuos textiles, apoya a pequeñas marcas responsables y promueve el consumo consciente.</p>
+    </div>
+  
+    <script>
+      function mostrarContenido(id) {
+        const secciones = document.querySelectorAll('.contenido');
+        secciones.forEach(seccion => seccion.style.display = 'none');
+        document.getElementById(id).style.display = 'block';
+      }
+    </script>
+  
+
+
+
+<!-- Sección de testimonios -->
+<section class="testimonios">
+  <h2>Historias de Cambio</h2>
+  <div class="tarjetas-testimonio">
+    <div class="tarjeta">
+      <p>"Desde que compro ropa reciclada, siento que mi armario tiene más personalidad y ayudo al planeta."</p>
+      <h4>- Ana, 22 años</h4>
+    </div>
+    <div class="tarjeta">
+      <p>"Mi marca de ropa ahora usa telas recicladas. La gente lo valora mucho."</p>
+      <h4>- Diego, emprendedor</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Consejo de la semana -->
+<section class="consejo-semanal">
+  <h2>Consejo de la Semana 🌱</h2>
+  <p>Lee siempre las etiquetas de tu ropa. Busca certificados como GOTS o Fair Trade.</p>
+</section>
+
+
+<!-- Sección de suscripción con formulario -->
+<div class="container my-5">
+    <div class="text-center p-4 bg-light rounded shadow">
+      <h2 class="mb-3">¡Suscríbete para recibir novedades!</h2>
+      <p class="mb-4">Únete a nuestra comunidad sostenible y recibe consejos cada semana.</p>
+      <form id="formSuscripcion" class="d-flex flex-column align-items-center">
+        <input type="email" id="emailInput" class="form-control w-50 mb-3" placeholder="Ingresa tu correo electrónico" required>
+        <button type="submit" class="btn btn-success btn-lg">Suscribirse</button>
+      </form>
+      <p id="mensajeGracias" class="mt-3 text-success fw-bold" style="display: none;">¡Gracias por suscribirte! 🌱</p>
+    </div>
+  </div>
+  <script>
+    const form = document.getElementById('formSuscripcion');
+    const emailInput = document.getElementById('emailInput');
+    const mensajeGracias = document.getElementById('mensajeGracias');
+  
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Evita que recargue la página
+  
+      const email = emailInput.value.trim();
+  
+      // Validación básica
+      if (email && email.includes("@") && email.includes(".")) {
+        mensajeGracias.style.display = 'block';
+        emailInput.value = ""; // Limpia el campo
+      } else {
+        alert("Por favor, ingresa un correo electrónico válido.");
+      }
+    });
+  </script>
+    
+
+      
+
+<!-- Pie de página -->
+<footer class="footer py-4" style="background-color: #fff; color: #28a745;">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+
+      <!-- Columna: Logo a la izquierda -->
+      <div class="col-md-2 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
+        <img src="/carrito/imagenes/lOGO.png" alt="Logo" class="animate__animated animate__fadeInLeft" style="height: 60px;">
+      </div>
+
+      <!-- Columna: Contacto y Suscripción en el mismo recuadro -->
+      <div class="col-md-8 mb-4 mb-md-0 text-center text-md-start">
+        <div class="d-flex justify-content-center justify-content-md-between flex-column flex-md-row">
+          
+          <!-- Contacto -->
+          <div class="mb-4 mb-md-0">
+            <p style="color:  #34520D; font-weight: bold;">Contáctanos</p>
+            <p style="color:  #34520D;">Teléfonos: 324556789 - 31855957</p>
+            <p style="color:  #34520D;">Email: Endless@GMAIL.COM</p>
+          </div>
+
+          <!-- Suscripción -->
+          <div class="mb-4 mb-md-0">
+            <p style="color:  #34520D; font-weight: bold;">Suscríbete</p>
+            <div class="d-flex justify-content-center mt-2">
+              <input type="email" id="emailInput" placeholder="Tu correo electrónico" class="form-control w-75" style="border: 1px solid  #34520D; color:  #34520D;">
+              <button class="btn ms-2" style="border: 1px solid #34520D; color: #34520D; transition: 0.3s;" onmouseover="this.style.background='#28a745'; this.style.color='white'" onmouseout="this.style.background='white'; this.style.color='#28a745'" id="suscribirBtn">Suscribirse</button>
+            </div>
+            <!-- Mensaje de agradecimiento (inicialmente oculto) -->
+            <p id="mensajeGracias" class="mt-3 text-success fw-bold" style="display: none;">¡Gracias por suscribirte! 🌱</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Columna: Redes sociales (Íconos con animaciones) -->
+      <div class="col-md-2 text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+          <!-- WhatsApp -->
+          <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/pro.webp" alt="WhatsApp" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/face.jpg" alt="Facebook" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/ista.png" alt="Instagram" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Enlaces de políticas al final -->
+  <div class="text-center mt-4" style="color:  #34520D; font-size: 14px;">
+    <a href="#" style="color: #34520D; text-decoration: none;">Política de Privacidad</a> | 
+    <a href="#" style="color:  #34520D; text-decoration: none;">Política de Cookies</a>
+  </div>
+
+  <!-- Derechos de autor -->
+  <div class="text-center mt-3" style="color:  #34520D; font-size: 12px;">
+    <p>&copy; 2025 Endless. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Script para manejar la suscripción -->
+<script>
+  const suscribirBtn = document.getElementById('suscribirBtn');
+  const emailInput = document.getElementById('emailInput');
+  const mensajeGracias = document.getElementById('mensajeGracias');
+
+  suscribirBtn.addEventListener('click', function() {
+    const email = emailInput.value.trim();
+
+    // Validación básica
+    if (email && email.includes("@") && email.includes(".")) {
+      mensajeGracias.style.display = 'block';
+      emailInput.value = ""; // Limpia el campo
+    } else {
+      alert("Por favor, ingresa un correo electrónico válido.");
+    }
+  });
+</script>
+
+
+
+
+
+</body>
+
+
+  
+</html>

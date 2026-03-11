@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Endless</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+  <!-- hojas de estilo personalizadas -->
+  <link rel="stylesheet" href="encabezado.css" />
+  <link rel="stylesheet" href="piedepagina.css" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  </style>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="s.js"></script>
+</head>
+<body>
+
+  <!-- Barra superior fija -->
+  <header class="barra-superior">
+    <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
+      <div class="d-flex align-items-center gap-3">
+        <a href="/proyecto.html">
+          <img src="/carrito\imagenes\lOGO.png" class="logo" alt="Logo" style="height: 80px;">
+        </a>
+        
+   
+        <div class="dropdown">
+          <button class="btn btn-secondary btn-custom dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Únete
+          </button>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="/inisioseccion/iniciodesesio.html">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="/registro/registro.html">Registrarse</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </div>
+        <a href="/carrito/carrito.html" class="position-relative carrito-animado">
+          <img src="imagenes/carro de compras.png" alt="Carrito de compras" style="width: 40px;">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success badge-pulso">
+            3
+            <span class="visually-hidden">productos en el carrito</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Menú grande -->
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item"><a class="nav-link text-dark" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/contactanos/contactanosf.html">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/como funciona/comofunciona.html">Cómo Comprar</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/blog/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/comprar/comprar.html">Marketplace</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/incentivos/incentivos.html">Incentivos</a></li>
+        </ul>
+      <!-- Menú móvil -->
+      <div class="dropdown d-md-none ms-auto">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          ☰ Menú
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+          <li><a class="dropdown-item" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
+          <li><a class="dropdown-item" href="/contactanos/contactanosf.html">Contáctanos</a></li>
+          <li><a class="dropdown-item" href="/nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+          <li><a class="dropdown-item" href="/como funciona/comofunciona.html">Cómo Comprar</a></li>
+          <li><a class="dropdown-item" href="/blog/blog.html">Blog</a></li>
+          <li><a class="dropdown-item" href="/comprar/comprar.html">Marketplace</a></li>
+          <li><a class="dropdown-item" href="/incentivos/incentivos.html">Incentivos</a></li>
+        </ul>
+      </div>    
+            </div>
+          </header>
+
+  <!-- Contenido principal (puedes usar esta sección para tu contenido real) -->
+  <!-- Sección del Carrito de Compras -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Resumen de tu Pedido</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items">
+      <!-- Ejemplo de producto en el carrito -->
+      <tr class="cart-item animate__animated animate__fadeIn">
+        <td>Producto 1</td>
+        <td>$15.00</td>
+        <td>2</td>
+        <td>$30.00</td>
+      </tr>
+      <tr class="cart-item animate__animated animate__fadeIn">
+        <td>Producto 2</td>
+        <td>$25.00</td>
+        <td>1</td>
+        <td>$25.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" class="text-right"><strong>Total</strong></td>
+        <td><strong>$55.00</strong></td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div class="d-flex justify-content-between mt-4">
+    <a href="/comprar/comprar.html">
+      <button class="btn btn-secondary btn-lg">Seguir Comprando</button>
+    </a>
+    
+    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#pagoModal">
+      <i class="fas fa-credit-card"></i> Proceder al Pago
+    </button>
+  </div>
+</div>
+
+
+            
+<!-- Modal de Pago -->
+<div class="modal fade" id="pagoModal" tabindex="-1" aria-labelledby="pagoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content animate__animated animate__zoomIn">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pagoModalLabel">Información de Pago</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección de Envío</label>
+            <input type="text" class="form-control" id="direccion" required>
+          </div>
+          <div class="mb-3">
+            <label for="metodoPago" class="form-label">Método de Pago</label>
+            <select class="form-select" id="metodoPago" onchange="toggleCamposPago(this.value)">
+              <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+              <option value="pse">PSE</option>
+              <option value="nequi">Nequi</option>
+              <option value="daviplata">Daviplata</option>
+              <option value="paypal">PayPal</option>
+            </select>
+          </div>
+
+          <!-- Campos para Tarjeta -->
+          <div id="camposTarjeta">
+            <div class="mb-3">
+              <label for="tarjeta" class="form-label">Número de Tarjeta</label>
+              <input type="text" class="form-control" id="tarjeta">
+            </div>
+            <div class="mb-3">
+              <label for="expiracion" class="form-label">Fecha de Expiración</label>
+              <input type="month" class="form-control" id="expiracion">
+            </div>
+            <div class="mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input type="password" class="form-control" id="cvv">
+            </div>
+          </div>
+
+          <!-- Texto para otros métodos -->
+          <div id="camposOtros" class="d-none">
+            <p class="text-muted">
+              Serás redirigido al proveedor seleccionado para completar tu pago.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Confirmar Pago</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script para mostrar/ocultar campos -->
+<script>
+  function toggleCamposPago(metodo) {
+    const tarjeta = document.getElementById('camposTarjeta');
+    const otros = document.getElementById('camposOtros');
+
+    if (metodo === 'tarjeta') {
+      tarjeta.classList.remove('d-none');
+      otros.classList.add('d-none');
+    } else {
+      tarjeta.classList.add('d-none');
+      otros.classList.remove('d-none');
+    }
+  }
+
+  // Inicializa el estado correcto al abrir el modal
+  document.addEventListener('DOMContentLoaded', () => {
+    const selectMetodo = document.getElementById('metodoPago');
+    toggleCamposPago(selectMetodo.value);
+  });
+</script>
+
+
+<!-- Pie de página -->
+<footer class="footer py-4" style="background-color: #fff; color: #28a745;">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+
+      <!-- Columna: Logo a la izquierda -->
+      <div class="col-md-2 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
+        <img src="/carrito/imagenes/lOGO.png" alt="Logo" class="animate__animated animate__fadeInLeft" style="height: 60px;">
+      </div>
+
+      <!-- Columna: Contacto y Suscripción en el mismo recuadro -->
+      <div class="col-md-8 mb-4 mb-md-0 text-center text-md-start">
+        <div class="d-flex justify-content-center justify-content-md-between flex-column flex-md-row">
+          
+          <!-- Contacto -->
+          <div class="mb-4 mb-md-0">
+            <p style="color:  #34520D; font-weight: bold;">Contáctanos</p>
+            <p style="color:  #34520D;">Teléfonos: 324556789 - 31855957</p>
+            <p style="color:  #34520D;">Email: Endless@GMAIL.COM</p>
+          </div>
+
+          <!-- Suscripción -->
+          <div class="mb-4 mb-md-0">
+            <p style="color:  #34520D; font-weight: bold;">Suscríbete</p>
+            <div class="d-flex justify-content-center mt-2">
+              <input type="email" id="emailInput" placeholder="Tu correo electrónico" class="form-control w-75" style="border: 1px solid  #34520D; color:  #34520D;">
+              <button class="btn ms-2" style="border: 1px solid #34520D; color: #34520D; transition: 0.3s;" onmouseover="this.style.background='#28a745'; this.style.color='white'" onmouseout="this.style.background='white'; this.style.color='#28a745'" id="suscribirBtn">Suscribirse</button>
+            </div>
+            <!-- Mensaje de agradecimiento (inicialmente oculto) -->
+            <p id="mensajeGracias" class="mt-3 text-success fw-bold" style="display: none;">¡Gracias por suscribirte! 🌱</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Columna: Redes sociales (Íconos con animaciones) -->
+      <div class="col-md-2 text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+          <!-- WhatsApp -->
+          <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/pro.webp" alt="WhatsApp" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/face.jpg" alt="Facebook" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/ista.png" alt="Instagram" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Enlaces de políticas al final -->
+  <div class="text-center mt-4" style="color:  #34520D; font-size: 14px;">
+    <a href="#" style="color: #34520D; text-decoration: none;">Política de Privacidad</a> | 
+    <a href="#" style="color:  #34520D; text-decoration: none;">Política de Cookies</a>
+  </div>
+
+  <!-- Derechos de autor -->
+  <div class="text-center mt-3" style="color:  #34520D; font-size: 12px;">
+    <p>&copy; 2025 Endless. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Script para manejar la suscripción -->
+<script>
+  const suscribirBtn = document.getElementById('suscribirBtn');
+  const emailInput = document.getElementById('emailInput');
+  const mensajeGracias = document.getElementById('mensajeGracias');
+
+  suscribirBtn.addEventListener('click', function() {
+    const email = emailInput.value.trim();
+
+    // Validación básica
+    if (email && email.includes("@") && email.includes(".")) {
+      mensajeGracias.style.display = 'block';
+      emailInput.value = ""; // Limpia el campo
+    } else {
+      alert("Por favor, ingresa un correo electrónico válido.");
+    }
+  });
+</script>
+
+
+
+
+</body>
+</html>
+

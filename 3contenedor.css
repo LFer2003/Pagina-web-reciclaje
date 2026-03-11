@@ -1,0 +1,139 @@
+/* Sección Servicios */
+.seccion-servicios {
+    background-image: url("img/fondocontenedor.png"); /* Fondo con imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    padding: 60px 0;
+    text-align: center; /* Centra el contenido */
+}
+
+/* Título de Servicios */
+.seccion-servicios .titulo-servicios {
+    font-size: 64px !important; /* Asegura que el tamaño sea el correcto */
+    font-weight: 800; /* Negrita */
+    color: #34520D; /* Verde */
+    margin-bottom: 30px; /* Espacio debajo */
+    text-align: center; /* Centrado del título */
+    font-family: 'Saira SemiCondensed', sans-serif; /* Fuente similar */
+
+
+ 
+  }
+  
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .cuadro-servicio {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cuadro-servicio img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .cuadro-servicio:hover img {
+    transform: scale(1.05);
+  }
+  
+  .contenido-servicio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cuadro-servicio:hover .contenido-servicio {
+    opacity: 1;
+  }
+  
+  .contenido-servicio h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #34520D;
+  }
+  
+  .contenido-servicio p {
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .servicios-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .grid-7 {
+    justify-content: center;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Ajustar columnas para pantallas pequeñas */
+@media (max-width: 1200px) {
+    .servicios-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .servicios-grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .servicios-grid,
+    .servicios-grid-2 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Cambiar altura fija por altura mínima */
+  .cuadro-servicio {
+    min-height: 320px;
+    height: auto;
+  }
+
+  .cuadro-servicio {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .cuadro-servicio img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

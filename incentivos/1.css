@@ -1,0 +1,98 @@
+#incentivos {
+    background-image: url("imagenes/1.png"); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  .container-incentivos {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+  }
+  
+  #incentivos h2 {
+    color:#34520D;
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .item {
+    margin-bottom: 20px;
+  }
+  
+  .toggle-btn {
+    font-size: 1.1rem;
+    background-color: #34520D;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    font-weight: 600;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #FCC509;
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 0 15px;
+    color: #333;
+  }
+  
+  .content.active {
+    max-height: 300px;
+    padding: 15px;
+  }
+  
+  .content p {
+    margin: 0;
+  }
+  
+  /* Asegura que el footer esté por debajo */
+  footer {
+    position: relative;
+    z-index: 0;
+  }
+
+  .circle {
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  

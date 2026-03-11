@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Endless</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+  <!-- Tus hojas de estilo personalizadas -->
+  <link rel="stylesheet" href="encabezado.css" />
+  <link rel="stylesheet" href="piedepagina.css" />
+  <link rel="stylesheet" href="contactanosf.css">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  </style>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="s.js"></script>
+</head>
+<body>
+
+  <!-- Barra superior fija -->
+  <header class="barra-superior">
+    <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
+      <div class="d-flex align-items-center gap-3">
+        <a href="/proyecto.html">
+          <img src="/contactanos\imagenes\lOGO endless.png" class="logo" alt="Logo" style="height: 80px;">
+        </a>
+        
+
+
+        <div class="dropdown">
+       
+            <button class="btn btn-secondary btn-custom dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Únete
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="/inisioseccion/iniciodesesio.html">Iniciar sesión</a></li>
+              <li><a class="dropdown-item" href="/registro/registro.html">Registrarse</a></li>
+          </ul>
+        </div>
+        <a href="/carrito/carrito.html" class="position-relative carrito-animado">
+          <img src="imagenes/carro de compras.png" alt="Carrito de compras" style="width: 40px;">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success badge-pulso">
+            3
+            <span class="visually-hidden">productos en el carrito</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Menú grande -->
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item"><a class="nav-link text-dark" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/contactanos/contactanosf.html">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/como funciona/comofunciona.html">Cómo Comprar</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/blog/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/comprar/comprar.html">Marketplace</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="/incentivos/incentivos.html">Incentivos</a></li>
+        </ul>
+
+      <!-- Menú móvil -->
+      <div class="dropdown d-md-none ms-auto">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          ☰ Menú
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+          <li><a class="dropdown-item" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
+          <li><a class="dropdown-item" href="/contactanos/contactanosf.html">Contáctanos</a></li>
+          <li><a class="dropdown-item" href="/nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+          <li><a class="dropdown-item" href="/como funciona/comofunciona.html">Cómo Comprar</a></li>
+          <li><a class="dropdown-item" href="/blog/blog.html">Blog</a></li>
+          <li><a class="dropdown-item" href="/comprar/comprar.html">Marketplace</a></li>
+          <li><a class="dropdown-item" href="/incentivos/incentivos.html">Incentivos</a></li>
+        </ul>
+      </div>    
+            </div>
+          </header>
+  
+  
+
+  <div class="contact-page-container">
+    <div class="contact-info">
+        <h2>¡CONTÁCTANOS!</h2>
+        <p><img src="imagenes/telefono.png" alt="Teléfono" style="width: 20px; height: 20px; margin-right: 5px;"> 
+    324556789-31855957</p>
+    <p><img src="imagenes/gmail.png" alt="Gmail" style="width: 20px; height: 20px; margin-right: 5px;"> Endless@GMAIL.COM</p>
+        </div>
+    <div class="contact-form-map">
+        <section id="register">
+            <h3>¡ESCRIBENOS!</h3>
+            <form id="registration-form">
+                <fieldset>
+                    <label for="first-name">Nombres</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Apellido</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Comentarios</label>
+                    <textarea id="phone" name="phone" required></textarea>
+
+
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+          
+                <div id="enviando-animacion" style="display: none; text-align: center; margin-top: 15px;">
+                  <img src="https://i.picasion.com/pic92/44453dc4b75eb3ea00fb21d7c8d3ef10.gif" alt="Enviando..." style="max-width: 100px;">
+                  <p>Enviando mensaje...</p>
+                </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                    const formulario = document.getElementById('registration-form');
+                    const animacionDiv = document.getElementById('enviando-animacion');
+                  
+                    formulario.addEventListener('submit', function(event) {
+                      event.preventDefault(); // Evita el envío real del formulario por ahora
+                  
+                      // Oculta el botón enviar y muestra la animación
+                      formulario.querySelector('button[type="submit"]').style.display = 'none';
+                      animacionDiv.style.display = 'block';
+                  
+                      // Simula un proceso de envío (puedes reemplazar esto con tu lógica real de envío)
+                      setTimeout(function() {
+                        // Oculta la animación
+                        animacionDiv.style.display = 'none';
+                        // Muestra el botón enviar nuevamente (opcional)
+                        formulario.querySelector('button[type="submit"]').style.display = 'block';
+                        // Muestra una alerta (opcional)
+                        alert('Mensaje enviado!');
+                        // Recarga la página para "volver" a la misma página
+                        window.location.reload();
+                      }, 3000); // Ajusta el tiempo según la duración de tu GIF
+                    });
+                  });
+                  </script>
+              
+            </form>
+        </section>
+        <!-- MAPA -->
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31815.974429413967!2d-74.11203731455477!3d4.594594008632242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99852c7e11b7%3A0xc30edc7f647c0a55!2sEmpresa%20de%20reciclaje%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1744135780054!5m2!1ses-419!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+<!-- Pie de página -->
+<footer class="footer py-4" style="background-color: #fff; color: #28a745;">
+  <div class="container">
+    <div class="row text-center text-md-start align-items-center">
+
+      <!-- Columna: Logo a la izquierda -->
+      <div class="col-md-2 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
+        <img src="/carrito/imagenes/lOGO.png" alt="Logo" class="animate__animated animate__fadeInLeft" style="height: 60px;">
+      </div>
+
+      <!-- Columna: Contacto y Suscripción en el mismo recuadro -->
+      <div class="col-md-8 mb-4 mb-md-0 text-center text-md-start">
+        <div class="d-flex justify-content-center justify-content-md-between flex-column flex-md-row">
+          
+          <!-- Contacto -->
+          <div class="mb-4 mb-md-0">
+            <p style="color:  #34520D; font-weight: bold;">Contáctanos</p>
+            <p style="color:  #34520D;">Teléfonos: 324556789 - 31855957</p>
+            <p style="color:  #34520D;">Email: Endless@GMAIL.COM</p>
+          </div>
+
+          <!-- Suscripción -->
+          <div class="mb-4 mb-md-0">
+            <p style="color:  #34520D; font-weight: bold;">Suscríbete</p>
+            <div class="d-flex justify-content-center mt-2">
+              <input type="email" id="emailInput" placeholder="Tu correo electrónico" class="form-control w-75" style="border: 1px solid  #34520D; color:  #34520D;">
+              <button class="btn ms-2" style="border: 1px solid #34520D; color: #34520D; transition: 0.3s;" onmouseover="this.style.background='#28a745'; this.style.color='white'" onmouseout="this.style.background='white'; this.style.color='#28a745'" id="suscribirBtn">Suscribirse</button>
+            </div>
+            <!-- Mensaje de agradecimiento (inicialmente oculto) -->
+            <p id="mensajeGracias" class="mt-3 text-success fw-bold" style="display: none;">¡Gracias por suscribirte! 🌱</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Columna: Redes sociales (Íconos con animaciones) -->
+      <div class="col-md-2 text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+          <!-- WhatsApp -->
+          <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/pro.webp" alt="WhatsApp" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/face.jpg" alt="Facebook" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
+            <img src="imagenes/ista.png" alt="Instagram" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Enlaces de políticas al final -->
+  <div class="text-center mt-4" style="color:  #34520D; font-size: 14px;">
+    <a href="#" style="color: #34520D; text-decoration: none;">Política de Privacidad</a> | 
+    <a href="#" style="color:  #34520D; text-decoration: none;">Política de Cookies</a>
+  </div>
+
+  <!-- Derechos de autor -->
+  <div class="text-center mt-3" style="color:  #34520D; font-size: 12px;">
+    <p>&copy; 2025 Endless. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Script para manejar la suscripción -->
+<script>
+  const suscribirBtn = document.getElementById('suscribirBtn');
+  const emailInput = document.getElementById('emailInput');
+  const mensajeGracias = document.getElementById('mensajeGracias');
+
+  suscribirBtn.addEventListener('click', function() {
+    const email = emailInput.value.trim();
+
+    // Validación básica
+    if (email && email.includes("@") && email.includes(".")) {
+      mensajeGracias.style.display = 'block';
+      emailInput.value = ""; // Limpia el campo
+    } else {
+      alert("Por favor, ingresa un correo electrónico válido.");
+    }
+  });
+</script>
+
+    
+       
+      
+      
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

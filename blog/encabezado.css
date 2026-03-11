@@ -1,0 +1,450 @@
+/* Aplicando el fondo solo al body */
+
+
+
+/* Contenedor de los botones y demás elementos */
+.container-fluid {
+    position: relative;  /* Esto asegura que los botones se sitúen sobre la imagen de fondo */
+    z-index: 10;  /* Asegura que los botones estén encima */
+    padding: 0;  /* Sin márgenes ni rellenos */
+    width: 100%;  /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+/* Coloca los botones sobre la imagen */
+.contenedor {
+    position: absolute;
+    top: 50%;  /* Para centrarlo verticalmente */
+    left: 50%;  /* Para centrarlo horizontalmente */
+    transform: translate(-50%, -50%);  /* Ajuste fino para centrar */
+    z-index: 100;  /* Los botones estarán encima de la imagen */
+    text-align: center;  /* Centra los botones */
+    width: 100%;
+}
+
+/* Asegura que los botones se muestren de manera estilizada */
+.btn-custom {
+    background-color: rgba(0, 0, 0, 0.6);  /* Fondo oscuro para los botones */
+    color: white;  /* Texto blanco */
+    border: none;
+    padding: 15px 30px;  /* Aseguramos que el botón tenga buen tamaño */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;  /* Ajustar tamaño de fuente */
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: rgba(0, 0, 0, 0.8);  /* Cambiar color de fondo al pasar el mouse */
+}
+
+/* Para que los botones cambien en pantallas pequeñas */
+@media (max-width: 768px) {
+    .btn-custom {
+        font-size: 1rem;  /* Reducir el tamaño de la fuente en pantallas más pequeñas */
+        padding: 12px 24px;  /* Ajuste de padding para que los botones no se vean tan grandes */
+    }
+}
+
+/* Estilo global para los botones */
+.btn-custom {
+    background-color: #34520D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover, .btn-custom:focus {
+    background-color: #FCC509;
+    color: white;
+    outline: none;
+}
+
+.btn-custom:active {
+    background-color: #34520D;
+
+}
+/* Estilo para el botón 'Registrar' */
+.btn-secondary.btn-custom {
+    background-color: #34520D;
+    color: white;  /* Texto blanco por defecto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* Transición solo en el color del texto */
+}
+
+.btn-secondary.btn-custom:hover, .btn-secondary.btn-custom:focus {
+    background-color: #FCC509; /* Fondo amarillo */
+    color: #000000; /* Cambiar color del texto a negro */
+}
+
+/* Estilo para el botón hamburguesa (Menú) */
+.btn-dark.btn-custom {
+    background-color: #34520D;
+    color: white;
+    border: none;
+}
+
+.btn-dark.btn-custom:hover, .btn-dark.btn-custom:focus {
+    background-color: #FCC509;
+    color: white;
+    
+}
+
+.btn-dark.btn-custom:active {
+    background-color: #34520D;
+}
+
+/* Menú desplegable y opciones */
+.dropdown-menu {
+    background-color: #34520D; /* Fondo verde */
+    border-radius: 5px;
+    border: none;
+}
+
+.dropdown-item {
+    color: white; /* Texto blanco */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #FCC509; /* Amarillo cuando se pasa el mouse */
+    color: white; /* Texto blanco */
+    
+}
+
+
+/* Asegura que el logo mantenga un tamaño consistente */
+.logo {
+    height: 60px; /* Ajusta el tamaño a tu preferencia */
+    width: auto;
+    max-width: 100%; /* Se asegura de que el logo no exceda el ancho disponible */
+}
+
+/* Para dispositivos móviles, ajustamos el tamaño del logo */
+@media (max-width: 768px) {
+    .logo {
+        height: 50px; /* Reducimos el tamaño del logo en pantallas pequeñas */
+    }
+}
+
+/* Aseguramos que los botones mantengan el mismo estilo */
+.btn-custom, .btn {
+    font-size: 1.1rem; /* Tamaño de texto más grande */
+    padding: 10px 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón hamburguesa (Menú) */
+.btn-dark.btn-custom {
+    background-color:#34520D;  /* Cambiar a color de tu preferencia */
+    color: rgb(255, 255, 255);  /* Color del texto */
+    border: none;
+}
+
+.btn-dark.btn-custom:hover, .btn-dark.btn-custom:focus {
+    background-color: #FCC509;  /* Color del fondo cuando se pasa el cursor */
+    color: rgb(0, 0, 0);  /* Color del texto cuando se pasa el cursor */
+}
+
+.btn-dark.btn-custom:active {
+    background-color: #85b5c9;  /* Color del fondo cuando se hace clic */
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+    background-color: #FCC509;  /* Color de fondo del menú desplegable */
+    border-radius: 5px;
+    border: none;
+}
+
+.dropdown-item {
+    color: rgb(0, 0, 0);  /* Color del texto de las opciones del menú */
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color:#34520D;  /* Fondo cuando se pasa el cursor sobre las opciones */
+    color: white;  /* Color del texto */
+    
+}
+
+/* Hacer que la imagen de fondo sea completamente responsiva */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Se quita el efecto de fijación para móviles */
+        background-size: cover; /* Asegura que la imagen se adapte bien a pantallas más pequeñas */
+    }
+
+    /* Para dispositivos móviles, se pueden ajustar otros elementos si es necesario */
+    .contenedor {
+        padding: 20px; /* Añadir algo de espacio en pantallas pequeñas */
+    }
+}
+
+/* Cambiar solo el color del texto al pasar el mouse */
+.btn-custom:hover {
+    color: #000000;  /* Cambiar el color del texto a amarillo */
+}
+.btn-custom {
+    background-color: #34520D;  /* Fondo verde oscuro para los botones */
+    color: white;  /* Texto blanco */
+    border: none;
+    padding: 15px 30px;  /* Asegura que los botones tengan buen tamaño */
+    font-size: 1.2rem;  /* Ajustar tamaño de fuente */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 5px;  /* Añadir espacio entre los botones */
+    text-align: center;  /* Asegura que el texto del botón esté centrado */
+}
+
+.logo {
+    height: 100px; /* Ajusta la altura del logo a tu preferencia */
+    width: auto;  /* El ancho se ajustará automáticamente para mantener la proporción */
+    max-width: 100%; /* Se asegura de que el logo no exceda el ancho disponible */}
+
+    .encabezado {
+        background-image: url('img/tu-imagen.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        color: white;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .boton-estatico {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn-custom {
+        font-size: 18px;
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    
+    .imagen-grande {
+        background-image: url('img/tu-imagen.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        color: white;
+      }
+      
+      .boton-estatico {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .btn-custom {
+        font-size: 20px;
+        padding: 15px 30px;
+        height: 60px;
+      }
+      
+      /* Sección de abajo */
+      .seccion-transforma {
+        padding: 50px 0;
+        background-color: #f4f4f4;
+      }
+      
+      .seccion-transforma h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      
+      .seccion-transforma p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      
+      .seccion-transforma .img-fluid {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      
+      .bloque-boton {
+        position: relative; /* Importante para que el botón se posicione dentro de este */
+        height: 500px;       /* Ajusta la altura según necesites */
+        background-color: #f4f4f4; /* Solo para visualizar */
+      }
+      
+      .boton-fijo {
+        position: absolute; /* Permite mover con top y left */
+        top: 100px;          /* Sube o baja el botón */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+      }
+      
+      .btn-custom {
+        font-size: 18px;
+        padding: 12px 25px;
+        height: auto;
+        background-color: #34520D;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        animation: buttonAppear 0.8s ease-out;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .btn-custom:hover {
+        background-color: #FFD700; /* Amarillo */
+        color: #000;
+        transform: translateY(-5px) scale(1.05);
+      }
+      @keyframes buttonAppear {
+        0% {
+          opacity: 0;
+          transform: translateY(30px) scale(0.9);
+        }
+        60% {
+          opacity: 1;
+          transform: translateY(-10px) scale(1.05);
+        }
+        100% {
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      
+/*carrito*/
+
+  
+  
+  /* EFECTO HOVER PARA AGRANDAR */
+  .carrito-animado:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ANIMACIÓN DE PULSO PARA LA BOLITA DEL CONTADOR */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .badge-pulso {
+    animation: pulse 1.5s infinite;
+  }
+  
+
+
+
+/* 1. Estilos normales para enlaces del menú */
+.nav-link {
+    color: #34520D !important;
+    transition: all 0.3s ease;
+    font-weight: bold; /* 👈 aquí */
+  }
+  
+  /* 2. Hover de enlaces */
+  .nav-link:hover {
+    background-color: #FFD700;
+    color: black !important;
+  }
+  
+  /* 3. Botón de menú hamburguesa */
+  .btn-outline-dark {
+    background-color: #34520D;
+    color: white;
+    border-color: #34520D;
+    transition: all 0.3s ease;
+    font-weight: bold; /* 👈 aquí */
+  }
+  
+  /* 4. Hover del botón de menú (cuando se hace click y se muestra el dropdown) */
+  .btn-outline-dark:active,
+  .btn-outline-dark:focus,
+  .btn-outline-dark:hover {
+    background-color: #FFD700;
+    color: black;
+    border-color: #FFD700;
+  }
+  
+  /* 5. Dropdown items */
+  .dropdown-menu .dropdown-item {
+    color: #34520D;
+    transition: all 0.3s ease;
+    font-weight: bold; /* 👈 aquí */
+  }
+  
+  /* 6. Hover de dropdown items */
+  .dropdown-menu .dropdown-item:hover,
+  .dropdown-menu .dropdown-item:focus {
+    background-color: #34520D;
+    color: rgb(255, 255, 255);
+  }
+
+  
+  .nav-link,
+.btn-outline-dark,
+.dropdown-menu .dropdown-item {
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 0 0 transparent;
+}
+
+.nav-link:hover,
+.btn-outline-dark:hover,
+.dropdown-menu .dropdown-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estructura base del botón hamburguesa */
+.custom-toggler {
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    z-index: 999;
+  }
+  
+  .toggler-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #34520D;
+    transition: all 0.4s ease;
+    display: block;
+    border-radius: 2px;
+  }
+  
+  /* Al activar el menú, cambiar el icono a "X" */
+  .custom-toggler.collapsed .top-bar {
+    transform: rotate(0) translateY(0);
+  }
+  
+  .custom-toggler:not(.collapsed) .top-bar {
+    transform: rotate(45deg) translateY(7px);
+  }
+  
+  .custom-toggler:not(.collapsed) .middle-bar {
+    opacity: 0;
+  }
+  
+  .custom-toggler:not(.collapsed) .bottom-bar {
+    transform: rotate(-45deg) translateY(-7px);
+  }
+
+  

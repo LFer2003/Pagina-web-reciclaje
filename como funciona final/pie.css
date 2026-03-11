@@ -1,0 +1,121 @@
+/* Estilo para el pie de página */
+.footer {
+    background-image: url('img enc/piedepagina.png'); /* Imagen de fondo */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    animation: fadeInFooter 1.5s ease-in-out;
+}
+
+/* Animación para aparecer suavemente */
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 150px; /* Tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-center {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-link {
+    color: #34520D; /* Verde */
+    text-decoration: underline;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-social-icon {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.footer-social-icon img {
+    width: 30px; /* Tamaño de íconos */
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icon img:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        flex: none;
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Estilo para los botones de redes sociales */
+.footer-social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto al pasar el mouse por encima */
+  .footer-social-icon:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del icono */
+    opacity: 0.8; /* Agrega un efecto de desvanecimiento */
+  }
+  
+  /* Opcional: efecto de color de fondo o sombra al pasar el mouse */
+  .footer-social-icon:hover img {
+    filter: brightness(1.2); /* Aumenta el brillo de la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+  }
+  
+

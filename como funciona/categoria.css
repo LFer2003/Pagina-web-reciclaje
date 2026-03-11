@@ -1,0 +1,62 @@
+/* Segunda sección */
+.categories-section {
+    padding: 60px 20px;
+    background-image:( #f0f0f0);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .categories-title {
+    font-size: 2.2em;
+    color: #34520D;
+    margin-bottom: 40px;
+    font-weight: bold;
+    animation: slideUp 1.2s ease-out;
+  }
+  
+  /* Grid para categorías */
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo de cada categoría */
+  .category-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  .category-item span {
+    display: block;
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  /* Hover dinámico */
+  .category-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px  #FFD700(0, 128, 0, 0.3);
+    cursor: pointer;
+    background-color: #eaffea;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

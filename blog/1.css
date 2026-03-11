@@ -1,0 +1,29 @@
+.bienvenida-container {
+  background-image: url("imagenes/1.png"); /* Cambia por tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px;
+  color: #000000;
+}
+
+.bienvenida-texto {
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco semi-transparente */
+}
+
+.bienvenida-texto h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.bienvenida-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

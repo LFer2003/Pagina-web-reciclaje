@@ -1,0 +1,29 @@
+.btn-verde {
+    background-color: #34520D;
+    color: white;
+    border: none;
+  }
+  
+  .btn-verde:hover {
+    background-color: #34520D;
+  }
+  
+  .btn-amarillo {
+    background-color: #ffc107;
+    color: rgb(255, 249, 249);
+    border: none;
+  }
+  
+  .btn-amarillo:hover {
+    background-color: #e0a800;
+  }
+  
+  .btn-lg {
+    border-radius: 1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn-lg:hover {
+    transform: scale(1.05);
+  }
+  
