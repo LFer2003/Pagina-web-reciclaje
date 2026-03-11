@@ -51,10 +51,11 @@ Este proyecto forma parte del desarrollo académico y del portafolio profesional
 
 ## 👩‍💻 Autora
 
-**Laura López**
+**Laura Fernanda González López**
 
-Estudiante de Producción Multimedia
+Tecnóloga Producción Multimedia
 Tecnóloga en Automatización y Robótica Industrial
+Estudiante Ingenieria Mecatronica
 
 ---
 
