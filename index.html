@@ -130,70 +130,63 @@
   <!-- Barra superior fija -->
   <header class="barra-superior">
     <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
-      <!-- Barra superior fija -->
+      <!-- IZQUIERDA: Logo como enlace + Registro -->
+      <div class="d-flex align-items-center gap-3">
+        <a href="../index.html">
+          <img src="img/lOGO.png" class="logo" alt="Logo" style="height: 80px;">
+        </a>
 
-<header class="barra-superior">
-  <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
+        <div class="dropdown">
+          <button class="btn btn-secondary btn-custom dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Únete
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="../inisioseccion/iniciodesesio.html">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="../registro/registro.html">Registrarse</a></li>
+          </ul>
+        </div>
 
-```
-<!-- IZQUIERDA -->
-<div class="d-flex align-items-center gap-3">
+        <!-- CARRITO -->
+        <a href="../carrito/carrito.html" class="position-relative carrito-animado">
+          <img src="img/carro de compras.png" alt="Carrito de compras" style="width: 40px;">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success badge-pulso">
+            3
+            <span class="visually-hidden">productos en el carrito</span>
+          </span>
+        </a>  
+      </div>
 
-  <!-- LOGO -->
-  <a href="/Pagina-web-reciclaje/index.html">
-    <img src="/Pagina-web-reciclaje/img/lOGO.png" class="logo" alt="Logo" style="height: 80px;">
-  </a>
+      <!-- MENÚ PARA PANTALLAS GRANDES -->
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item"><a class="nav-link text-dark" href="../como funciona final/funciona.html">Cómo Funciona</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../contactanos/contactanosf.html">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../como funciona/comofunciona.html">Cómo Comprar</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../blog/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../comprar/comprar.html">Marketplace</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../incentivos/incentivos.html">Incentivos</a></li>
+      </ul>
 
-  <!-- UNETE -->
-  <div class="dropdown">
-    <button class="btn btn-secondary btn-custom dropdown-toggle" type="button" data-bs-toggle="dropdown">
-      Únete
-    </button>
-
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="/Pagina-web-reciclaje/inisioseccion/iniciodesesio.html">Iniciar sesión</a></li>
-      <li><a class="dropdown-item" href="/Pagina-web-reciclaje/registro/registro.html">Registrarse</a></li>
-    </ul>
-  </div>
-
-  <!-- CARRITO -->
-  <a href="/Pagina-web-reciclaje/carrito/carrito.html" class="position-relative carrito-animado">
-    <img src="/Pagina-web-reciclaje/img/carro de compras.png" alt="Carrito de compras" style="width: 40px;">
-  </a>
-
-</div>
-
-<!-- MENÚ DESKTOP -->
-<ul class="nav d-none d-md-flex">
-  <li class="nav-item"><a class="nav-link text-dark" href="/Pagina-web-reciclaje/como funciona final/funciona.html">Cómo Funciona</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="/Pagina-web-reciclaje/contactanos/contactanosf.html">Contáctanos</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="/Pagina-web-reciclaje/nosotros1/Notros/nosotros.html">Sobre Nosotros</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="/Pagina-web-reciclaje/como funciona/comofunciona.html">Cómo Comprar</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="/Pagina-web-reciclaje/blog/blog.html">Blog</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="/Pagina-web-reciclaje/comprar/comprar.html">Marketplace</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="/Pagina-web-reciclaje/incentivos/incentivos.html">Incentivos</a></li>
-</ul>
-
-<!-- MENÚ MÓVIL -->
-<div class="dropdown d-md-none ms-auto">
-  <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
-    ☰ Menú
-  </button>
-
-  <ul class="dropdown-menu dropdown-menu-end">
-    <li><a class="dropdown-item" href="/Pagina-web-reciclaje/como funciona final/funciona.html">Cómo Funciona</a></li>
-    <li><a class="dropdown-item" href="/Pagina-web-reciclaje/contactanos/contactanosf.html">Contáctanos</a></li>
-    <li><a class="dropdown-item" href="/Pagina-web-reciclaje/nosotros1/Notros/nosotros.html">Sobre Nosotros</a></li>
-    <li><a class="dropdown-item" href="/Pagina-web-reciclaje/como funciona/comofunciona.html">Cómo Comprar</a></li>
-    <li><a class="dropdown-item" href="/Pagina-web-reciclaje/blog/blog.html">Blog</a></li>
-    <li><a class="dropdown-item" href="/Pagina-web-reciclaje/comprar/comprar.html">Marketplace</a></li>
-    <li><a class="dropdown-item" href="/Pagina-web-reciclaje/incentivos/incentivos.html">Incentivos</a></li>
-  </ul>
-</div>
-
-  </div>
-</header>
-
+      <!-- MENÚ HAMBURGUESA PARA PANTALLAS PEQUEÑAS -->
+      <div class="dropdown d-md-none ms-auto">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          ☰ Menú
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
+          <li><a class="dropdown-item" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
+          <li><a class="dropdown-item" href="contactanos/contactanosf.html">Contáctanos</a></li>
+          <li><a class="dropdown-item" href="nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+          <li><a class="dropdown-item" href="como funciona/comofunciona.html">Cómo Comprar</a></li>
+          <li><a class="dropdown-item" href="blog/blog.html">Blog</a></li>
+          <li><a class="dropdown-item" href="comprar/comprar.html">Marketplace</a></li>
+          <li><a class="dropdown-item" href="incentivos/incentivos.html">Incentivos</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
+ 
       </div>
     </header>
   <!-- Imagen de fondo debajo del encabezado -->
