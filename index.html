@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Endless</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <link rel="stylesheet" href="encabezado.css">
   <link rel="stylesheet" href="2contenedor.css">
   <link rel="stylesheet" href="3contenedor.css">
   <link rel="stylesheet" href="4contendor.css">
   <link rel="stylesheet" href="5contenedor.css">
   <link rel="stylesheet" href="piedepagina.css">
+
   <script src="s.js"></script>
 
   <style>
+
     .barra-superior {
       position: fixed;
       top: 0;
@@ -30,7 +34,6 @@
     }
 
     .imagen-grande {
-      background-image: url('tu-imagen.jpg');
       background-size: cover;
       background-position: center;
       height: 500px;
@@ -120,19 +123,30 @@
       }
     }
 
-    /* Cursor tipo puntero para el logo */
-    .logo {
-      cursor: pointer;
-    }
   </style>
+
+
+
+
+
+
+
+   /* Cursor tipo puntero para el logo */
+.logo {
+  cursor: pointer;
+}
+</style>
 </head>
+
 <body>
   <!-- Barra superior fija -->
   <header class="barra-superior">
     <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
+      
       <!-- IZQUIERDA: Logo como enlace + Registro -->
       <div class="d-flex align-items-center gap-3">
-        <a href="../index.html">
+
+        <a href="index.html">
           <img src="img/lOGO.png" class="logo" alt="Logo" style="height: 80px;">
         </a>
 
@@ -140,31 +154,37 @@
           <button class="btn btn-secondary btn-custom dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
             Únete
           </button>
+
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="/inisioseccion/iniciodesesio.html">Iniciar sesión</a></li>
-            <li><a class="dropdown-item" href="/registro/registro.html">Registrarse</a></li>
+            <li><a class="dropdown-item" href="inisioseccion/iniciodesesio.html">Iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="registro/registro.html">Registrarse</a></li>
           </ul>
         </div>
 
         <!-- CARRITO -->
-        <a href="/carrito/carrito.html" class="position-relative carrito-animado">
+        <a href="carrito/carrito.html" class="position-relative carrito-animado">
           <img src="img/carro de compras.png" alt="Carrito de compras" style="width: 40px;">
+
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success badge-pulso">
             3
             <span class="visually-hidden">productos en el carrito</span>
           </span>
+
         </a>  
+
       </div>
+
+
 
       <!-- MENÚ PARA PANTALLAS GRANDES -->
       <ul class="nav d-none d-md-flex">
-        <li class="nav-item"><a class="nav-link text-dark" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="/contactanos/contactanosf.html">Contáctanos</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="/nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="/como funciona/comofunciona.html">Cómo Comprar</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="/blog/blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="/comprar/comprar.html">Marketplace</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="/incentivos/incentivos.html">Incentivos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="como funciona final/funciona.html">Cómo Funciona</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="contactanos/contactanosf.html">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="nosotros1/Notros/nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="como funciona/comofunciona.html">Cómo Comprar</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="blog/blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="comprar/comprar.html">Marketplace</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="incentivos/incentivos.html">Incentivos</a></li>
       </ul>
 
       <!-- MENÚ HAMBURGUESA PARA PANTALLAS PEQUEÑAS -->
@@ -172,521 +192,655 @@
         <button class="btn btn-outline-dark dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
           ☰ Menú
         </button>
+
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
-          <li><a class="dropdown-item" href="/como funciona final/funciona.html">Cómo Funciona</a></li>
-          <li><a class="dropdown-item" href="/contactanos/contactanosf.html">Contáctanos</a></li>
-          <li><a class="dropdown-item" href="/nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
-          <li><a class="dropdown-item" href="/como funciona/comofunciona.html">Cómo Comprar</a></li>
-          <li><a class="dropdown-item" href="/blog/blog.html">Blog</a></li>
-          <li><a class="dropdown-item" href="/comprar/comprar.html">Marketplace</a></li>
-          <li><a class="dropdown-item" href="/incentivos/incentivos.html">Incentivos</a></li>
+          <li><a class="dropdown-item" href="como funciona final/funciona.html">Cómo Funciona</a></li>
+          <li><a class="dropdown-item" href="contactanos/contactanosf.html">Contáctanos</a></li>
+          <li><a class="dropdown-item" href="nosotros1/Notros/nosotros.html">Sobre Nosotros</a></li>
+          <li><a class="dropdown-item" href="como funciona/comofunciona.html">Cómo Comprar</a></li>
+          <li><a class="dropdown-item" href="blog/blog.html">Blog</a></li>
+          <li><a class="dropdown-item" href="comprar/comprar.html">Marketplace</a></li>
+          <li><a class="dropdown-item" href="incentivos/incentivos.html">Incentivos</a></li>
         </ul>
       </div>
+
     </div>
   </header>
-</body>
-</html>
- 
-      </div>
-    </header>
+
   <!-- Imagen de fondo debajo del encabezado -->
   <img src="img/1.png" alt="Imagen grande" class="imagen-grande">
 
-
   <!-- Botón estático debajo del banner -->
   <div class="boton-estatico">
-    <a href="/contactanos/contactanosf.html" class="btn btn-primary btn-custom">Transforma tus residuos en oportunidades</a>
+    <a href="contactanos/contactanosf.html" class="btn btn-primary btn-custom">
+      Transforma tus residuos en oportunidades
+    </a>
   </div>
 
 
 
-  <style>
-    /* Estilos para la sección Incentivos */
-    .seccion-incentivos {
-      background-color: #34520D;
-      color: white;
-      padding: 50px 30px;
-      text-align: center;
-      border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      margin: 40px auto;
-      max-width: 900px;
-    }
-    
-    .seccion-incentivos h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      font-weight: 800;
-    }
-    
-    .seccion-incentivos p {
-      font-size: 1.25rem;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
-    
-    /* Botón de impacto */
-    .btn-impacto {
-      background-color: #4e7c18;
-      color: white;
-      font-weight: bold;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-    
-    .btn-impacto:hover {
-      background-color: #5d9622;
-      transform: scale(1.05);
-    }
-    
-    /* Animación de pulso en el texto destacado */
-    .pulso-verde {
-      animation: pulse 2s infinite;
-    }
-    
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    </style>
-
-<head>
 
 
-  <title>SCADA • Estación Inteligente</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
-  <link rel="stylesheet" href="styless.css">
-</head>
-<body>
+
+
+
+
+
+
+
+
+
+
+<style>
+/* Estilos para la sección Incentivos */
+.seccion-incentivos {
+  background-color: #34520D;
+  color: white;
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.seccion-incentivos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.seccion-incentivos p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Botón de impacto */
+.btn-impacto {
+  background-color: #4e7c18;
+  color: white;
+  font-weight: bold;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-impacto:hover {
+  background-color: #5d9622;
+  transform: scale(1.05);
+}
+
+/* Animación de pulso en el texto destacado */
+.pulso-verde {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+</style>
+
+<title>SCADA • Estación Inteligente</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+<link rel="stylesheet" href="styless.css">
+
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <span class="navbar-brand mb-0 h1">♻️ SCADA — Estación Inteligente</span>
+
     <div class="d-flex gap-2">
       <button id="btnStart" class="btn btn-success btn-sm">Iniciar</button>
       <button id="btnStop" class="btn btn-danger btn-sm">Detener</button>
       <button id="btnSave" class="btn btn-primary btn-sm">Guardar lectura</button>
     </div>
+
   </div>
 </nav>
 
 <main class="container my-4">
   <div class="row g-4">
 
-    <!-- Left: Visual + controls -->
-    <div class="col-lg-7">
-      <div class="card p-3 shadow-sm">
-        <div class="d-flex justify-content-between align-items-start mb-3">
-          <h5 class="mb-0">Panel visual</h5>
-          <small class="text-muted">Estado: <span id="systemState">Detenido</span></small>
-        </div>
 
-        <!-- Conveyor + indicators -->
-        <div class="mb-3">
-          <div class="conveyor" id="conveyor">
-            <div class="conveyor-item" id="conveyorItem">envase</div>
-          </div>
-        </div>
 
-        <div class="row text-center">
-          <div class="col-4">
-            <div class="indicator">
-              <div class="led" id="ledWeight"></div>
-              <small class="d-block">Peso (kg)</small>
-              <div class="value" id="weight">0.00</div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="indicator">
-              <div class="led" id="ledClass"></div>
-              <small class="d-block">Clasificación</small>
-              <div class="value" id="classification">—</div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="indicator">
-              <div class="led" id="ledConf"></div>
-              <small class="d-block">Confianza</small>
-              <div class="value" id="confidence">0%</div>
-            </div>
-          </div>
-        </div>
 
-        <hr>
 
-        <div class="d-flex gap-3 align-items-center">
-          <div>
-            <label class="form-label mb-1">Modo de simulación</label>
-            <select id="mode" class="form-select form-select-sm">
-              <option value="auto">Automático</option>
-              <option value="manual">Manual (Generar una lectura)</option>
-            </select>
-          </div>
 
-          <div id="manualControls" style="display:none;">
-            <label class="form-label mb-1">Material</label>
-            <select id="manualMaterial" class="form-select form-select-sm">
-              <option value="Plástico">Plástico</option>
-              <option value="Papel">Papel</option>
-              <option value="Metal">Metal</option>
-            </select>
-          </div>
 
-          <div id="manualWeightControl" style="display:none;">
-            <label class="form-label mb-1">Peso (kg)</label>
-            <input id="manualWeight" type="number" step="0.01" class="form-control form-control-sm" placeholder="0.5">
-          </div>
 
-          <div>
-            <label class="form-label mb-1 d-block invisible">.</label>
-            <button id="btnGenerate" class="btn btn-outline-secondary btn-sm">Generar</button>
-          </div>
-        </div>
 
-        <hr>
 
-        <h6 class="mt-3">Últimas lecturas</h6>
-        <ul id="log" class="list-group small" style="max-height:220px; overflow:auto;"></ul>
+ <!-- Left: Visual + controls -->
+<div class="col-lg-7">
+  <div class="card p-3 shadow-sm">
+
+    <div class="d-flex justify-content-between align-items-start mb-3">
+      <h5 class="mb-0">Panel visual</h5>
+      <small class="text-muted">Estado: <span id="systemState">Detenido</span></small>
+    </div>
+
+    <!-- Conveyor + indicators -->
+    <div class="mb-3">
+      <div class="conveyor" id="conveyor">
+        <div class="conveyor-item" id="conveyorItem">envase</div>
       </div>
     </div>
 
-    <!-- Right: Charts & stats -->
-    <div class="col-lg-5">
-      <div class="card p-3 shadow-sm mb-3">
-        <h6 class="mb-3">Estadísticas en tiempo real</h6>
-        <canvas id="pieChart" height="160"></canvas>
-      </div>
-
-      <div class="card p-3 shadow-sm mb-3">
-        <h6 class="mb-3">Peso (últimas lecturas)</h6>
-        <canvas id="lineChart" height="160"></canvas>
-      </div>
-
-      <div class="card p-3 shadow-sm">
-        <h6 class="mb-2">Acciones</h6>
-        <button id="btnDownload" class="btn btn-outline-secondary btn-sm mb-2">Descargar historial (CSV)</button>
-        <div class="mt-2 text-muted small">
-          Guardado en: <code>lectura_automatica.php</code> (MySQL)
+    <div class="row text-center">
+      
+      <div class="col-4">
+        <div class="indicator">
+          <div class="led" id="ledWeight"></div>
+          <small class="d-block">Peso (kg)</small>
+          <div class="value" id="weight">0.00</div>
         </div>
       </div>
+
+      <div class="col-4">
+        <div class="indicator">
+          <div class="led" id="ledClass"></div>
+          <small class="d-block">Clasificación</small>
+          <div class="value" id="classification">—</div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="indicator">
+          <div class="led" id="ledConf"></div>
+          <small class="d-block">Confianza</small>
+          <div class="value" id="confidence">0%</div>
+        </div>
+      </div>
+
     </div>
+
+    <hr>
+
+    <div class="d-flex gap-3 align-items-center">
+
+      <div>
+        <label class="form-label mb-1">Modo de simulación</label>
+        <select id="mode" class="form-select form-select-sm">
+          <option value="auto">Automático</option>
+          <option value="manual">Manual (Generar una lectura)</option>
+        </select>
+      </div>
+
+      <div id="manualControls" style="display:none;">
+        <label class="form-label mb-1">Material</label>
+        <select id="manualMaterial" class="form-select form-select-sm">
+          <option value="Plástico">Plástico</option>
+          <option value="Papel">Papel</option>
+          <option value="Metal">Metal</option>
+        </select>
+      </div>
+
+      <div id="manualWeightControl" style="display:none;">
+        <label class="form-label mb-1">Peso (kg)</label>
+        <input id="manualWeight" type="number" step="0.01" class="form-control form-control-sm" placeholder="0.5">
+      </div>
+
+      <div>
+        <label class="form-label mb-1 d-block invisible">.</label>
+        <button id="btnGenerate" type="button" class="btn btn-outline-secondary btn-sm">Generar</button>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <h6 class="mt-3">Últimas lecturas</h6>
+    <ul id="log" class="list-group small" style="max-height:220px; overflow:auto;"></ul>
 
   </div>
-</main>
+</div>
 
+
+
+
+
+
+
+
+
+
+
+    <!-- Right: Charts & stats -->
+<div class="col-lg-5">
+
+  <div class="card p-3 shadow-sm mb-3">
+    <h6 class="mb-3">Estadísticas en tiempo real</h6>
+    <canvas id="pieChart" height="160"></canvas>
+  </div>
+
+  <div class="card p-3 shadow-sm mb-3">
+    <h6 class="mb-3">Peso (últimas lecturas)</h6>
+    <canvas id="lineChart" height="160"></canvas>
+  </div>
+
+  <div class="card p-3 shadow-sm">
+    <h6 class="mb-2">Acciones</h6>
+    <button id="btnDownload" class="btn btn-outline-secondary btn-sm mb-2">Descargar historial (CSV)</button>
+
+    <div class="mt-2 text-muted small">
+      Guardado en: <code>lectura_automatica.php</code> (MySQL)
+    </div>
+  </div>
+
+</div>
+
+</div>
+</main>
 
 <script src="script.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Simulador de Reciclaje</title>
-  <style>
-    body { font-family: Arial; padding: 20px; background: #f3f3f3; }
-    .box { background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: auto; }
-    label { font-weight: bold; display: block; margin-top: 15px; }
-    button { margin-top: 20px; padding: 10px; width: 100%; background: #0080ff; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    .result { margin-top: 20px; padding: 15px; background: #e4f7e4; border-left: 4px solid #3cb43c; }
-  </style>
-</head>
-<bod
+<style>
+body { font-family: Arial; padding: 20px; background: #f3f3f3; }
 
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+}
 
-  <!-- Sección HTML -->
-    <section class="seccion-incentivos">
-      <h2 class="pulso-verde">🌿 ¡Tus acciones sostenibles tienen recompensa!</h2>
-      <p>En <strong>Endless Marketplace</strong>, premiamos tu compromiso con el planeta. Acumula puntos al reciclar, participar en campañas o invitar amigos, y cámbialos por descuentos, bonificaciones y premios especiales. 🍃</p>
-      <button class="btn-impacto" onclick="window.location.href='/incentivos/incentivos.html'">Descubre tus recompensas</button>
-    </section>
-    
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background: #0080ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e4f7e4;
+  border-left: 4px solid #3cb43c;
+}
+</style>
+
+<!-- Sección HTML -->
+<section class="seccion-incentivos">
+  <h2 class="pulso-verde">🌿 ¡Tus acciones sostenibles tienen recompensa!</h2>
+
+  <p>
+    En <strong>Endless Marketplace</strong>, premiamos tu compromiso con el planeta. 
+    Acumula puntos al reciclar, participar en campañas o invitar amigos, y cámbialos 
+    por descuentos, bonificaciones y premios especiales. 🍃
+  </p>
+
+  <button class="btn-impacto" onclick="window.location.href='incentivos/incentivos.html'">
+    Descubre tus recompensas
+  </button>
+</section>
+
 
 <!-- Sección de contenido -->
 <div class="seccion-transforma">
   <div class="container">
     <div class="row">
+
       <!-- Columna izquierda con el texto -->
       <div class="col-md-6 col-12">
+
         <h2>Transforma tus residuos en oportunidades</h2>
+
         <p>
           Bienvenidos a Endless, la plataforma digital que transforma el reciclaje en una oportunidad rentable y sostenible. 
           Nuestro proyecto surge de la necesidad de conectar a recicladores, consumidores y empresas en una economía circular 
           donde cada acción cuenta. A través de un innovador sistema gamificado y un marketplace inteligente, Endless incentiva 
           la participación activa en el reciclaje, ofreciendo recompensas, descuentos y oportunidades de negocio para todos.
         </p>
+
         <p>
           En Endless creemos que reciclar no solo es una responsabilidad ambiental, sino también una posibilidad para generar 
           ingresos y transformar el futuro. Únete a nosotros y descubre cómo, con cada acción, contribuyes a cuidar el planeta 
           y a impulsar una economía más justa y verde.
         </p>
+
       </div>
 
       <!-- Columna derecha con la imagen -->
       <div class="col-md-6 col-12">
-        <img src="img\2.png" alt="Imagen de Transformación" class="img-fluid">
+        <img src="img/2.png" alt="Imagen de Transformación" class="img-fluid">
       </div>
+
     </div>
   </div>
 </div>
 
 
   
-        <!--servicios-->
-        
-        <div class="seccion-servicios" id="servicios">
-          <div class="container">
-              <h2 class="titulo-servicios">Servicios</h2>
-            <!-- Contenido adicional -->
-         
-        
-          
-            <!-- Primer fila con 4 cuadros -->
-            <div class="servicios-grid">
-              <div class="cuadro-servicio">
-                <img src="img\validacion de reciclaje.png" alt="Validación de Reciclaje">
-                <div class="contenido-servicio">
-                  <h4><strong>Validación de Reciclaje</strong></h4>
-                  <p>Registro y verificación de acciones de reciclaje mediante fotos o escaneo de códigos QR en puntos de recolección.</p>
-                </div>
-              </div>
-              <div class="cuadro-servicio">
-                <img src="img\marketplace.png" alt="Marketplace de Materiales Reciclables">
-                <div class="contenido-servicio">
-                  <h4><strong>Marketplace de Materiales Reciclables</strong></h4>
-                  <p>Espacio para comprar y vender materiales reciclados, conectando a recicladores, consumidores y empresas.</p>
-                </div>
-              </div>
-              <div class="cuadro-servicio">
-                <img src="img\programarecompensas.png" alt="Programa de Recompensas e Incentivos">
-                <div class="contenido-servicio">
-                  <h4><strong>Programa de Recompensas e Incentivos</strong></h4>
-                  <p>Sistema que permite acumular puntos por cada reciclaje, canjeables por descuentos o beneficios exclusivos.</p>
-                </div>
-              </div>
-              <div class="cuadro-servicio">
-                <img src="img\cursos.png" alt="Cursos y Talleres de Sostenibilidad">
-                <div class="contenido-servicio">
-                  <h4><strong>Cursos y Talleres de Sostenibilidad</strong></h4>
-                  <p>Formación online y presencial en temas de reciclaje, economía circular y prácticas ecológicas.</p>
-                </div>
-              </div>
-            </div>
-        
-            <!-- Segunda fila con 3 cuadros -->
-            <div class="servicios-grid-2">
-              <div class="cuadro-servicio">
-                <img src="img\reportes.png" alt="Reportes de Impacto Ambiental">
-                <div class="contenido-servicio">
-                  <h4><strong>Reportes de Impacto Ambiental</strong></h4>
-                  <p>Generación de informes detallados sobre el impacto ambiental de las acciones de reciclaje, útiles para empresas y organizaciones.</p>
-                </div>
-              </div>
-              <div class="cuadro-servicio">
-                <img src="img\consultoria.avif" alt="Consultoría Ambiental para Empresas">
-                <div class="contenido-servicio">
-                  <h4><strong>Consultoría Ambiental para Empresas</strong></h4>
-                  <p>Asesoría especializada para optimizar procesos de reciclaje y gestión de residuos, ayudando a implementar estrategias sostenibles.</p>
-                </div>
-              </div>
-              <div class="cuadro-servicio">
-                <img src="img\eventos.png" alt="Eventos y Retos Digitales">
-                <div class="contenido-servicio">
-                  <h4><strong>Eventos y Retos Digitales</strong></h4>
-                  <p>Organización de competiciones, campañas y eventos temáticos para incentivar la participación y promover el reciclaje.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-<!-- Sección Valor Único -->
-<div class="seccion-valor-unico" id="valor-unico">
-  <div class="seccion-servicios">
-    <h2 class="titulo-servicios">Valor unico</h2>
+       <!--servicios-->
+
+<div class="seccion-servicios" id="servicios">
   <div class="container">
-    <div class="row align-items-center">
-      <!-- Columna de texto -->
-      <div class="col-md-6 col-12 text-content">
-      
-        <p>Endless es la única plataforma que transforma el reciclaje en una experiencia interactiva y rentable. 
-          Combina gamificación, un marketplace inteligente y un sistema de recompensas real para que cada acción de 
-          reciclaje se traduzca en beneficios económicos y un impacto ambiental positivo. Al conectar a usuarios, empresas 
-          y comunidades, Endless convierte la sostenibilidad en una oportunidad accesible para todos, impulsando la economía circular de manera innovadora y motivadora.</p>
+
+    <h2 class="titulo-servicios">Servicios</h2>
+
+    <!-- Primer fila con 4 cuadros -->
+    <div class="servicios-grid">
+
+      <div class="cuadro-servicio">
+        <img src="img/validacion de reciclaje.png" alt="Validación de Reciclaje" loading="lazy">
+        <div class="contenido-servicio">
+          <h4><strong>Validación de Reciclaje</strong></h4>
+          <p>Registro y verificación de acciones de reciclaje mediante fotos o escaneo de códigos QR en puntos de recolección.</p>
+        </div>
       </div>
 
-      <!-- Columna de video -->
-      <div class="col-md-6 col-12 video-container">
-        <img src="img/gif.gif" alt="Imagen de Valor Único" class="gif-valor">
+      <div class="cuadro-servicio">
+        <img src="img/marketplace.png" alt="Marketplace de Materiales Reciclables" loading="lazy">
+        <div class="contenido-servicio">
+          <h4><strong>Marketplace de Materiales Reciclables</strong></h4>
+          <p>Espacio para comprar y vender materiales reciclados, conectando a recicladores, consumidores y empresas.</p>
+        </div>
       </div>
+
+      <div class="cuadro-servicio">
+        <img src="img/programarecompensas.png" alt="Programa de Recompensas e Incentivos" loading="lazy">
+        <div class="contenido-servicio">
+          <h4><strong>Programa de Recompensas e Incentivos</strong></h4>
+          <p>Sistema que permite acumular puntos por cada reciclaje, canjeables por descuentos o beneficios exclusivos.</p>
+        </div>
+      </div>
+
+      <div class="cuadro-servicio">
+        <img src="img/cursos.png" alt="Cursos y Talleres de Sostenibilidad" loading="lazy">
+        <div class="contenido-servicio">
+          <h4><strong>Cursos y Talleres de Sostenibilidad</strong></h4>
+          <p>Formación online y presencial en temas de reciclaje, economía circular y prácticas ecológicas.</p>
+        </div>
+      </div>
+
     </div>
+
+    <!-- Segunda fila con 3 cuadros -->
+    <div class="servicios-grid-2">
+
+      <div class="cuadro-servicio">
+        <img src="img/reportes.png" alt="Reportes de Impacto Ambiental" loading="lazy">
+        <div class="contenido-servicio">
+          <h4><strong>Reportes de Impacto Ambiental</strong></h4>
+          <p>Generación de informes detallados sobre el impacto ambiental de las acciones de reciclaje, útiles para empresas y organizaciones.</p>
+        </div>
+      </div>
+
+      <div class="cuadro-servicio">
+        <img src="img/consultoria.avif" alt="Consultoría Ambiental para Empresas" loading="lazy">
+        <div class="contenido-servicio">
+          <h4><strong>Consultoría Ambiental para Empresas</strong></h4>
+          <p>Asesoría especializada para optimizar procesos de reciclaje y gestión de residuos, ayudando a implementar estrategias sostenibles.</p>
+        </div>
+      </div>
+
+      <div class="cuadro-servicio">
+        <img src="img/eventos.png" alt="Eventos y Retos Digitales" loading="lazy">
+        <div class="contenido-servicio">
+          <h4><strong>Eventos y Retos Digitales</strong></h4>
+          <p>Organización de competiciones, campañas y eventos temáticos para incentivar la participación y promover el reciclaje.</p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
+</div>
+
+
+<!-- Sección Valor Único -->
+<div class="seccion-valor-unico" id="valor-unico">
+
+  <div class="seccion-servicios">
+
+    <h2 class="titulo-servicios">Valor unico</h2>
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <!-- Columna de texto -->
+        <div class="col-md-6 col-12 text-content">
+
+          <p>
+            Endless es la única plataforma que transforma el reciclaje en una experiencia interactiva y rentable.
+            Combina gamificación, un marketplace inteligente y un sistema de recompensas real para que cada acción de
+            reciclaje se traduzca en beneficios económicos y un impacto ambiental positivo. Al conectar a usuarios,
+            empresas y comunidades, Endless convierte la sostenibilidad en una oportunidad accesible para todos,
+            impulsando la economía circular de manera innovadora y motivadora.
+          </p>
+
+        </div>
+    <!-- Columna de video -->
+<div class="col-md-6 col-12 video-container">
+  <img src="img/gif.gif" alt="Imagen de Valor Único" class="gif-valor">
+</div>
+</div>
+</div>
 </div>
 
 <!-- Sección ¿Qué dicen nuestros usuarios? -->
 <div class="seccion-usuarios" id="usuarios">
-  <div class="container"> <h2>¿Qué dicen nuestros usuarios?</h2>
+  <div class="container">
+
+    <h2>¿Qué dicen nuestros usuarios?</h2>
+
     <div class="row">
-      <!-- Imagen 1 y su texto -->
+
+      <!-- Usuario 1 -->
       <div class="col-md-4">
         <div class="usuario">
-          <img src="img\persona1.png" alt="Usuario 1" class="imagen-usuario">
-          <p class="texto-usuario">Nunca imaginé que reciclar pudiera ser tan divertido y rentable; cada acción me brinda recompensas reales.</p>
+          <img src="img/persona1.png" alt="Usuario 1" class="imagen-usuario">
+          <p class="texto-usuario">
+            Nunca imaginé que reciclar pudiera ser tan divertido y rentable; cada acción me brinda recompensas reales.
+          </p>
         </div>
       </div>
-      
-      <!-- Imagen 2 y su texto -->
+
+      <!-- Usuario 2 -->
       <div class="col-md-4">
         <div class="usuario">
-          <img src="img\persona2.png" alt="Usuario 2" class="imagen-usuario">
-          <p class="texto-usuario">Gracias a Endless, no solo cuido el planeta, sino que también ahorro en mis compras diarias.</p>
+          <img src="img/persona2.png" alt="Usuario 2" class="imagen-usuario">
+          <p class="texto-usuario">
+            Gracias a Endless, no solo cuido el planeta, sino que también ahorro en mis compras diarias.
+          </p>
         </div>
       </div>
-      
-      <!-- Imagen 3 y su texto -->
+
+      <!-- Usuario 3 -->
       <div class="col-md-4">
         <div class="usuario">
-          <img src="img\persona3.png" alt="Usuario 3" class="imagen-usuario">
-          <p class="texto-usuario">La plataforma es intuitiva y su sistema de retos me motiva a reciclar constantemente, convirtiendo mi esfuerzo en beneficios tangibles.</p>
+          <img src="img/persona3.png" alt="Usuario 3" class="imagen-usuario">
+          <p class="texto-usuario">
+            La plataforma es intuitiva y su sistema de retos me motiva a reciclar constantemente, convirtiendo mi esfuerzo en beneficios tangibles.
+          </p>
         </div>
       </div>
+
     </div>
   </div>
 </div>
 
 
 <!-- Pie de página -->
-<footer class="footer py-4" style="background-color: #fff; color: #28a745;">
+<footer class="footer py-4" style="background-color:#fff; color:#28a745;">
+
   <div class="container">
     <div class="row text-center text-md-start align-items-center">
 
-      <!-- Columna: Logo a la izquierda -->
+      <!-- Logo -->
       <div class="col-md-2 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
-        <img src="/carrito/imagenes/lOGO.png" alt="Logo" class="animate__animated animate__fadeInLeft" style="height: 60px;">
+        <img src="img/lOGO.png" alt="Logo" style="height:60px;">
       </div>
 
-      <!-- Columna: Contacto y Suscripción en el mismo recuadro -->
+      <!-- Contacto y Suscripción -->
       <div class="col-md-8 mb-4 mb-md-0 text-center text-md-start">
+
         <div class="d-flex justify-content-center justify-content-md-between flex-column flex-md-row">
-          
+
           <!-- Contacto -->
           <div class="mb-4 mb-md-0">
-            <p style="color:  #34520D; font-weight: bold;">Contáctanos</p>
-            <p style="color:  #34520D;">Teléfonos: 324556789 - 31855957</p>
-            <p style="color:  #34520D;">Email: Endless@GMAIL.COM</p>
+            <p style="color:#34520D;font-weight:bold;">Contáctanos</p>
+            <p style="color:#34520D;">Teléfonos: 324556789 - 31855957</p>
+            <p style="color:#34520D;">Email: Endless@GMAIL.COM</p>
           </div>
 
           <!-- Suscripción -->
           <div class="mb-4 mb-md-0">
-            <p style="color:  #34520D; font-weight: bold;">Suscríbete</p>
+
+            <p style="color:#34520D;font-weight:bold;">Suscríbete</p>
+
             <div class="d-flex justify-content-center mt-2">
-              <input type="email" id="emailInput" placeholder="Tu correo electrónico" class="form-control w-75" style="border: 1px solid  #34520D; color:  #34520D;">
-              <button class="btn ms-2" style="border: 1px solid #34520D; color: #34520D; transition: 0.3s;" onmouseover="this.style.background='#28a745'; this.style.color='white'" onmouseout="this.style.background='white'; this.style.color='#28a745'" id="suscribirBtn">Suscribirse</button>
+
+              <input type="email" id="emailInput" placeholder="Tu correo electrónico"
+              class="form-control w-75"
+              style="border:1px solid #34520D;color:#34520D;">
+
+              <button class="btn ms-2"
+              style="border:1px solid #34520D;color:#34520D;transition:0.3s;"
+              onmouseover="this.style.background='#28a745';this.style.color='white'"
+              onmouseout="this.style.background='white';this.style.color='#28a745'"
+              id="suscribirBtn">
+
+              Suscribirse
+
+              </button>
+
             </div>
-            <!-- Mensaje de agradecimiento (inicialmente oculto) -->
-            <p id="mensajeGracias" class="mt-3 text-success fw-bold" style="display: none;">¡Gracias por suscribirte! 🌱</p>
+
+            <p id="mensajeGracias" class="mt-3 text-success fw-bold" style="display:none;">
+              ¡Gracias por suscribirte! 🌱
+            </p>
+
           </div>
 
         </div>
+
       </div>
 
-      <!-- Columna: Redes sociales (Íconos con animaciones) -->
+      <!-- Redes sociales -->
       <div class="col-md-2 text-center text-md-end">
+
         <div class="d-flex justify-content-center justify-content-md-end gap-3">
-          <!-- WhatsApp -->
-          <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
-            <img src="/inisioseccion\imagenes\pro.webp" alt="WhatsApp" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+
+          <a href="https://www.whatsapp.com/" target="_blank">
+            <img src="img/whatsapp.png" alt="WhatsApp" style="width:35px;height:35px;">
           </a>
-          <!-- Facebook -->
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
-            <img src="/como funciona final\img enc\face.jpg" alt="Facebook" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="img/facebook.png" alt="Facebook" style="width:35px;height:35px;">
           </a>
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
-            <img src="/como funciona final\img enc\ista1.png" alt="Instagram" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram" style="width:35px;height:35px;">
           </a>
+
         </div>
+
       </div>
 
     </div>
   </div>
 
-  <!-- Enlaces de políticas al final -->
-  <div class="text-center mt-4" style="color:  #34520D; font-size: 14px;">
-    <a href="#" style="color: #34520D; text-decoration: none;">Política de Privacidad</a> | 
-    <a href="#" style="color:  #34520D; text-decoration: none;">Política de Cookies</a>
+
+  <!-- Políticas -->
+  <div class="text-center mt-4" style="color:#34520D;font-size:14px;">
+    <a href="#" style="color:#34520D;text-decoration:none;">Política de Privacidad</a> |
+    <a href="#" style="color:#34520D;text-decoration:none;">Política de Cookies</a>
   </div>
 
-  <!-- Derechos de autor -->
-  <div class="text-center mt-3" style="color:  #34520D; font-size: 12px;">
+  <!-- Derechos -->
+  <div class="text-center mt-3" style="color:#34520D;font-size:12px;">
     <p>&copy; 2025 Endless. Todos los derechos reservados.</p>
   </div>
+
 </footer>
 
-<!-- Script para manejar la suscripción -->
+
 <script>
-  const suscribirBtn = document.getElementById('suscribirBtn');
-  const emailInput = document.getElementById('emailInput');
-  const mensajeGracias = document.getElementById('mensajeGracias');
 
-  suscribirBtn.addEventListener('click', function() {
-    const email = emailInput.value.trim();
+const suscribirBtn = document.getElementById('suscribirBtn');
+const emailInput = document.getElementById('emailInput');
+const mensajeGracias = document.getElementById('mensajeGracias');
 
-    // Validación básica
-    if (email && email.includes("@") && email.includes(".")) {
-      mensajeGracias.style.display = 'block';
-      emailInput.value = ""; // Limpia el campo
-    } else {
-      alert("Por favor, ingresa un correo electrónico válido.");
-    }
-  });
+suscribirBtn.addEventListener('click', function() {
+
+  const email = emailInput.value.trim();
+
+  if (email && email.includes("@") && email.includes(".")) {
+
+    mensajeGracias.style.display = 'block';
+    emailInput.value = "";
+
+  } else {
+
+    alert("Por favor, ingresa un correo electrónico válido.");
+
+  }
+
+});
+
 </script>
 
 
-
 <script>
-  
-  // Variable global para contar productos en el carrito
-  let cartCount = 0;
 
-  // Estado de sesión simulado 
-  let isLoggedIn = false; // Simula si el usuario está logueado
+let cartCount = 0;
+let isLoggedIn = false;
 
- 
-  function addToCart() {
-    // Si no está logueado, mostramos el modal
-    if (!isLoggedIn) {
-      const modal = new bootstrap.Modal(document.getElementById('authModal'));
-      modal.show();
-      return;
-    }
+function addToCart() {
 
-    // Si está logueado, incrementamos el contador del carrito
-    cartCount++;
+  if (!isLoggedIn) {
 
-    // contador visualmente
-    const cartCountElement = document.getElementById('cart-count');
-    const cartBadgeElement = document.getElementById('cart-badge');
+    const modal = new bootstrap.Modal(document.getElementById('authModal'));
+    modal.show();
+    return;
 
-    if (cartCountElement) cartCountElement.textContent = cartCount;
-    if (cartBadgeElement) cartBadgeElement.textContent = cartCount;
   }
 
+  cartCount++;
 
-  window.onload = function() {
+  const cartCountElement = document.getElementById('cart-count');
+  const cartBadgeElement = document.getElementById('cart-badge');
 
-    if (isLoggedIn) {
-    
-      document.getElementById('cart-badge').textContent = cartCount;
-    }
+  if (cartCountElement) cartCountElement.textContent = cartCount;
+  if (cartBadgeElement) cartBadgeElement.textContent = cartCount;
+
+}
+
+window.onload = function() {
+
+  if (isLoggedIn) {
+
+    document.getElementById('cart-badge').textContent = cartCount;
+
   }
 
+}
 
 </script>
 
-<html>
+</body>
+</html>
