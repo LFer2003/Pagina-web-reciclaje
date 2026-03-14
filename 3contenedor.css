@@ -1,16 +1,29 @@
 /* Sección Servicios */
 .seccion-servicios {
-    background-image: url("img/fondocontenedor.png"); /* Fondo con imagen */
-    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen de fondo */
-    padding: 60px 0;
-    text-align: center; /* Centra el contenido */
+    background-image: url("img/fondocontenedor.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    margin: 0;
+    padding: 80px 0;   /* solo arriba y abajo */
+}
+
+.seccion-servicios .container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+body{
+margin:0;
+padding:0;
 }
 
 /* Título de Servicios */
 .seccion-servicios .titulo-servicios {
     font-size: 64px !important; /* Asegura que el tamaño sea el correcto */
-    font-weight: 800; /* Negrita */
+    font-weight: 700; /* Negrita */
     color: #34520D; /* Verde */
     margin-bottom: 30px; /* Espacio debajo */
     text-align: center; /* Centrado del título */

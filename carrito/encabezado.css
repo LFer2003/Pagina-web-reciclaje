@@ -7,20 +7,20 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    height: 100vh;  /* Asegura que ocupe toda la altura de la ventana */
+    height: 100vh;  
 }
 
 
 
 /* Contenedor de los botones y demás elementos */
 .container-fluid {
-    position: relative;  /* Esto asegura que los botones se sitúen sobre la imagen de fondo */
+    position: relative;  /*  asegura que los botones se sitúen sobre la imagen de fondo */
     z-index: 10;  /* Asegura que los botones estén encima */
     padding: 0;  /* Sin márgenes ni rellenos */
     width: 100%;  /* Asegura que el contenedor ocupe todo el ancho */
 }
 
-/* Coloca los botones sobre la imagen */
+
 .contenedor {
     position: absolute;
     top: 50%;  /* Para centrarlo verticalmente */
@@ -65,6 +65,8 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
+
+
 
 .btn-custom:hover, .btn-custom:focus {
     background-color: #FCC509;
@@ -396,7 +398,7 @@ body {
   .dropdown-menu .dropdown-item {
     color: #34520D;
     transition: all 0.3s ease;
-    font-weight: bold; /* 👈 aquí */
+    font-weight: bold; 
   }
   
   /* 6. Hover de dropdown items */
@@ -460,4 +462,14 @@ body {
     transform: rotate(-45deg) translateY(-7px);
   }
 
-  
+  .btn-unete{
+background-color:#34520D;
+color:white;
+border:none;
+padding:10px 20px;
+}
+
+.btn-unete:hover{
+background-color:#4f7a14;
+color:white;
+}

@@ -1,122 +1,62 @@
-/* Sección de contenido */
-.seccion-transforma {
-  padding: 80px 20px;
-  background-color: #f4f4f4;
-  color: #34520D;
-  text-align: left;
-  overflow: hidden;
-  font-family: 'Saira SemiCondensed', sans-serif;
+/* Sección Valor Único */
+.seccion-valor-unico{
+padding:60px 20px;
+background-color:#ffffff;
+color:#34520D;
+font-family:'Saira SemiCondensed', sans-serif;
 }
 
-/* Encabezado */
-.seccion-transforma h2 {
-  font-size: 30px;
-  font-weight: 900;
-  margin-bottom: 30px;
-  color: #34520D;
+/* Título */
+.seccion-valor-unico h2{
+font-size:50px;
+font-weight:600;
+margin-bottom:50px;
+color:#34520D;
 }
 
 /* Párrafos */
-.seccion-transforma p {
-  font-size: 22px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-  color: #000;
-  max-width: 90%;
+.seccion-valor-unico p{
+font-size:18px;
+line-height:1.7;
+margin-bottom:20px;
+color:#000;
+max-width:90%;
 }
 
-/* Estilo para la imagen */
-.seccion-transforma img.img-fluid {
-  width: 70%;
-  height: auto;
-  display: block;
-  margin: 0 auto;  /* Centrado de la imagen */
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Imagen */
+.valor-img{
+width:90%;
+height:auto;
+display:block;
+margin:20px auto;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+transition:transform .3s ease, box-shadow .3s ease;
 }
 
-.seccion-transforma .img-fluid:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* Barra superior fija */
-.barra-superior {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Padding para que el contenido no quede oculto bajo la barra fija */
-body {
-  padding-top: 100px;
-}
-
-/* Imagen grande debajo del header */
-.imagen-grande {
-  background-image: url('tu-imagen.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  width: 100%;
-}
-
-/* Botón centrado bajo la imagen */
-.boton-estatico {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.btn-custom {
-  font-size: 18px;
-  padding: 12px 25px;
-  height: auto;
-}
-
-/* Sección de contenido */
-.seccion-transforma {
-  padding: 50px 0;
-  background-color: #f4f4f4;
-}
-
-.seccion-transforma .row {
-  display: flex;
-  align-items: center;
-  flex-direction: row; /* Asegura que el contenido en pantallas grandes siga una fila */
+.valor-img:hover{
+transform:scale(1.05);
+box-shadow:0 20px 30px rgba(0,0,0,0.3);
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .seccion-transforma {
-    padding: 60px 15px;
-    text-align: center;
-  }
+@media (max-width:768px){
 
-  .seccion-transforma h2 {
-    font-size: 24px; /* Título más pequeño en pantallas pequeñas */
-  }
+.seccion-valor-unico{
+text-align:center;
+}
 
-  .seccion-transforma p {
-    font-size: 18px; /* Párrafo más pequeño en pantallas pequeñas */
-  }
+.seccion-valor-unico h2{
+font-size:24px;
+}
 
-  .seccion-transforma .img-fluid {
-    max-width: 100%;
-    margin-top: 20px;
-  }
+.seccion-valor-unico p{
+font-size:16px;
+}
 
-  /* Hacer que las columnas se apilen en pantallas pequeñas y la imagen esté abajo */
-  .seccion-transforma .row {
-    flex-direction: column; /* Asegura que el contenido se apile con la imagen abajo */
-  }
+.valor-img{
+width:100%;
+margin-top:20px;
+}
 
-  .seccion-transforma .col-md-6 {
-    width: 100%;  /* Las columnas ocupan todo el ancho en pantallas pequeñas */
-  }
 }

@@ -1,63 +1,66 @@
-/* Sección ¿Qué dicen nuestros usuarios? */
-.seccion-usuarios {
-    background-color: #f5f5f5; /* Color de fondo suave */
-    padding: 60px 0;
-    text-align: center;
+/* Sección usuarios */
+.seccion-usuarios{
+background:#f5f5f5;
+padding:60px 0;
+text-align:center;
 }
 
-.seccion-usuarios h2 {
-    font-size: 64px !important;
-    font-weight: 800; /* Más "rellenito" (negrita fuerte) */
-    color: #34520D; /* Color verde */
-    margin-bottom: 40px;
-    text-align: center; /* Centrado del título */
-    font-family: 'Saira SemiCondensed', sans-serif;
+/* Título */
+.seccion-usuarios h2{
+font-size:42px;
+font-weight:600;
+color:#34520D;
+margin-bottom:40px;
+font-family:'Saira SemiCondensed', sans-serif;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
+/* Tarjeta usuario */
+.usuario{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+padding:20px;
+text-align:center;
+height:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:flex-start;
+transition:transform .3s;
 }
 
-.usuario {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+.usuario:hover{
+transform:scale(1.05);
 }
 
-.usuario:hover {
-    transform: scale(1.05); /* Efecto al pasar el cursor */
+/* Imagen */
+.imagen-usuario{
+width:140px;
+height:auto;
+border-radius:10px;
+
 }
 
-.imagen-usuario {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+/* Texto */
+.texto-usuario{
+font-size:17px;
+color:#333;
+font-style:italic;
+line-height:1.6;
+text-align:center;
+margin-top:10px;
+max-width:250px;
 }
 
-.texto-usuario {
-    font-size: 18px;
-    color: #333;
-    font-style: italic;
-    line-height: 1.5;
-    margin-top: 10px;
+/* Responsive */
+@media (max-width:768px){
+
+.seccion-usuarios h2{
+font-size:32px;
 }
 
-/* Para pantallas pequeñas, asegúrate que las columnas ocupen todo el ancho */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .usuario {
-        margin-bottom: 30px;
-    }
+.usuario{
+margin-bottom:25px;
 }
 
-
+}
