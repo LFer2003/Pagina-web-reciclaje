@@ -137,6 +137,136 @@
     </div>
   </section>
 
+</section>
+</div>
+
+<!-- ================= SCADA ESTACIÓN INTELIGENTE ================= -->
+
+<link rel="stylesheet" href="styless.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+<div class="container my-5">
+
+  <nav class="navbar navbar-dark bg-dark mb-4 rounded">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h5">♻️ SCADA — Estación Inteligente</span>
+      <div class="d-flex gap-2">
+        <button id="btnStart" class="btn btn-success btn-sm">Iniciar</button>
+        <button id="btnStop" class="btn btn-danger btn-sm">Detener</button>
+        <button id="btnSave" class="btn btn-primary btn-sm">Guardar lectura</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row g-4">
+
+    <!-- PANEL VISUAL -->
+    <div class="col-lg-7">
+      <div class="card p-3 shadow-sm">
+
+        <div class="d-flex justify-content-between mb-3">
+          <h5 class="mb-0">Panel visual</h5>
+          <small class="text-muted">Estado: <span id="systemState">Detenido</span></small>
+        </div>
+
+        <div class="conveyor mb-3" id="conveyor">
+          <div class="conveyor-item" id="conveyorItem">envase</div>
+        </div>
+
+        <div class="row text-center">
+
+          <div class="col-4">
+            <div class="indicator">
+              <div class="led" id="ledWeight"></div>
+              <small>Peso (kg)</small>
+              <div class="value" id="weight">0.00</div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="indicator">
+              <div class="led" id="ledClass"></div>
+              <small>Clasificación</small>
+              <div class="value" id="classification">—</div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="indicator">
+              <div class="led" id="ledConf"></div>
+              <small>Confianza</small>
+              <div class="value" id="confidence">0%</div>
+            </div>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="d-flex gap-3 align-items-end flex-wrap">
+
+          <div>
+            <label class="form-label mb-1">Modo</label>
+            <select id="mode" class="form-select form-select-sm">
+              <option value="auto">Automático</option>
+              <option value="manual">Manual</option>
+            </select>
+          </div>
+
+          <div id="manualControls" style="display:none;">
+            <label class="form-label mb-1">Material</label>
+            <select id="manualMaterial" class="form-select form-select-sm">
+              <option>Plástico</option>
+              <option>Papel</option>
+              <option>Metal</option>
+            </select>
+          </div>
+
+          <div id="manualWeightControl" style="display:none;">
+            <label class="form-label mb-1">Peso</label>
+            <input id="manualWeight" type="number" step="0.01" class="form-control form-control-sm">
+          </div>
+
+          <button id="btnGenerate" class="btn btn-outline-secondary btn-sm">Generar</button>
+
+        </div>
+
+        <hr>
+
+        <h6>Últimas lecturas</h6>
+        <ul id="log" class="list-group small" style="max-height:200px;overflow:auto;"></ul>
+
+      </div>
+    </div>
+
+
+    <!-- GRAFICAS -->
+    <div class="col-lg-5">
+
+      <div class="card p-3 shadow-sm mb-3">
+        <h6>Material reciclado</h6>
+        <canvas id="pieChart"></canvas>
+      </div>
+
+      <div class="card p-3 shadow-sm mb-3">
+        <h6>Peso (últimas lecturas)</h6>
+        <canvas id="lineChart"></canvas>
+      </div>
+
+      <div class="card p-3 shadow-sm">
+        <button id="btnDownload" class="btn btn-outline-secondary btn-sm">
+          Descargar historial CSV
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
 
   
 
@@ -226,7 +356,7 @@
 
       <!-- Columna: Logo a la izquierda -->
       <div class="col-md-2 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
-        <img src="/carrito/imagenes/lOGO.png" alt="Logo" class="animate__animated animate__fadeInLeft" style="height: 60px;">
+        <img src="/carrito/imagenes/lOGO.png" alt="Logo" class="animate__animated animate__fadeInLeft" style="height: 90px;">
       </div>
 
       <!-- Columna: Contacto y Suscripción en el mismo recuadro -->
@@ -259,15 +389,15 @@
         <div class="d-flex justify-content-center justify-content-md-end gap-3">
           <!-- WhatsApp -->
           <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
-            <img src="imagenes/pro.webp" alt="WhatsApp" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="/como funciona/imagenes/pro.webp" alt="WhatsApp" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
           </a>
           <!-- Facebook -->
           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
-            <img src="imagenes/face.jpg" alt="Facebook" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="/como funciona/imagenes/face.jpg" alt="Facebook" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
           </a>
           <!-- Instagram -->
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="animate__animated animate__pulse animate__infinite">
-            <img src="imagenes/ista.png" alt="Instagram" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="/como funciona/imagenes/ista.png" alt="Instagram" style="width: 35px; height: 35px; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
           </a>
         </div>
       </div>
@@ -306,41 +436,7 @@
   });
 </script>
 
-
-
-
-    <script>function expandImage(id) {
-      const gifUrls = [
-        'imagenes/tomarfoto.png', // 1
-        'imagenes/22.gif', // 2
-        'imagenes/33.gif', // 3
-        'imagenes/ENDLE$S.gif', // 4
-        'imagenes/contactar.gif', // 5
-        'imagenes/recibitproducto.gif'  // 6
-      ];
-    
-    
-      const gifUrl = gifUrls[id - 1]; // Obtener el GIF correspondiente al índice
-    
-      // Crear un contenedor expandido
-      const expandedDiv = document.createElement('div');
-      expandedDiv.classList.add('expanded');
-    
-      // Crear una imagen con el GIF
-      const gifImage = document.createElement('img');
-      gifImage.src = gifUrl;
-      
-      // Añadir la imagen al contenedor
-      expandedDiv.appendChild(gifImage);
-    
-      // Añadir el contenedor a la página
-      document.body.appendChild(expandedDiv);
-    
-      // Añadir un evento para cerrar la imagen expandida cuando se hace clic en cualquier parte de la pantalla
-      expandedDiv.addEventListener('click', () => {
-        document.body.removeChild(expandedDiv); // Remover el contenedor expandido
-      });
-    }
-    </script>
-    
+</body>
 </html>
+
+
