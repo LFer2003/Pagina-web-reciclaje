@@ -1,37 +1,209 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Endless</title>
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-
-<!--  hojas de estilo personalizadas -->
-<link rel="stylesheet" href="iniciodesesion.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-html, body {
-height: 100%;
-margin: 0;
-display: flex;
-flex-direction: column;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-main {
-flex: 1;
+body{
+font-family:Arial, sans-serif;
+background:#f4f4f4;
 }
 
-footer {
-margin-top: auto;
+/* NAVBAR */
+
+.barra-superior{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
+
+body{
+padding-top:90px;
+}
+
+/* HERO */
+
+.hero img{
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+.hero-boton{
+position:absolute;
+bottom:40px;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* SECCIONES */
+
+.seccion{
+padding:80px 0;
+}
+
+/* TRANSFORMA */
+
+.seccion-transforma{
+background:white;
+}
+
+.seccion-transforma h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.seccion-transforma p{
+font-size:18px;
+line-height:1.6;
+}
+
+/* SERVICIOS */
+
+.seccion-servicios{
+background:#dfe5dc;
+}
+
+.titulo{
+text-align:center;
+font-size:50px;
+color:#2f4a08;
+margin-bottom:50px;
+}
+
+.servicios-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.cuadro-servicio{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+text-align:center;
+padding-bottom:20px;
+}
+
+.cuadro-servicio img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.cuadro-servicio h4{
+margin-top:15px;
+font-weight:bold;
+}
+
+/* VALOR UNICO */
+
+.valor-unico{
+background:#e8efe3;
+}
+
+.valor-unico img{
+border-radius:15px;
+}
+
+/* USUARIOS */
+
+.usuario{
+text-align:center;
+padding:20px;
+}
+
+.imagen-usuario{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin:auto;
+margin-bottom:15px;
+}
+
 </style>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="s.js"></script>
+</head>
 
+
+<body>
+
+<!-- NAVBAR -->
+
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="encabezado.css">
+<link rel="stylesheet" href="2contenedor.css">
+<link rel="stylesheet" href="3contenedor.css">
+<link rel="stylesheet" href="5contenedor.css">
+<link rel="stylesheet" href="piedepagina.css">
+
+<style>
+
+/* evitar bordes y expansión */
+body{
+margin:0;
+padding:0;
+}
+
+/* barra superior fija */
+.barra-superior{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* espacio para que el contenido no quede debajo del header */
+main{
+margin-top:100px;
+.barra-superior{
+position: relative;
+z-index: 9999;
+}
+.hero{
+z-index:1;
+}
+
+.barra-superior{
+z-index:9999;
+position:relative;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+ <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="s.js"></script>
 </head>
 <body>
 
@@ -41,93 +213,59 @@ margin-top: auto;
 
 <div class="d-flex align-items-center gap-3">
 
-<a href="../index.html">
-<img src="../inisioseccion/imagenes/lOGO endless.png" class="logo" alt="Logo" style="height: 80px;">
+<a href="index.html">
+<img src="inicio-sesion\imagenes\lOGO endless.png" class="logo" alt="Logo" style="height:80px;">
 </a>
 
 <div class="dropdown">
-
 <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
 Únete
 </button>
 
-<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-<li>
-<a class="dropdown-item" href="../inisioseccion/iniciodesesio.html">Iniciar sesión</a>
-</li>
-
-<li>
-<a class="dropdown-item" href="../registro/registro.html">Registrarse</a>
-</li>
-
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="registro\registro.html">Iniciar sesión</a></li>
+<li><a class="dropdown-item" href="registro/registro.html">Registrarse</a></li>
 </ul>
-
 </div>
 
-<a href="../carrito/carrito.html" class="position-relative carrito-animado">
-<img src="imagenes/carro de compras.png" alt="Carrito de compras" style="width: 40px;">
-<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success badge-pulso">
+<a href="carrito/carrito.html" class="position-relative carrito-animado">
+<img src="inicio-sesion\imagenes\carro de compras.png" style="width:40px;">
+<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
 3
-<span class="visually-hidden">productos en el carrito</span>
 </span>
 </a>
 
 </div>
 
-<!-- Menú grande -->
 <ul class="nav d-none d-md-flex">
-
-<li class="nav-item">
-<a class="nav-link text-dark" href="../como funciona final/funciona.html">Cómo Funciona</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link text-dark" href="../contactanos/contactanosf.html">Contáctanos</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link text-dark" href="../nosotros1/Notros/nosotros.html">Sobre Nosotros</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link text-dark" href="../como funciona/comofunciona.html">Cómo Comprar</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link text-dark" href="../blog/blog.html">Blog</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link text-dark" href="../comprar/comprar.html">Marketplace</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link text-dark" href="../incentivos/incentivos.html">Incentivos</a>
-</li>
-
+<li class="nav-item"><a class="nav-link text-dark" href="como-funciona\funciona.html">Cómo Funciona</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="contactanos\contactanosf.html">Contáctanos</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="como-funciona\funciona.html">Cómo Comprar</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="blog\blog.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="comprar\comprar.html">Marketplace</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="incentivos\incentivos.html">Incentivos</a></li>
 </ul>
 
-<!-- Menú móvil -->
 <div class="dropdown d-md-none ms-auto">
-
-<button class="btn btn-outline-dark dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown">
+<button class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">
 ☰ Menú
 </button>
 
 <ul class="dropdown-menu dropdown-menu-end">
-
-<li><a class="dropdown-item" href="../como funciona final/funciona.html">Cómo Funciona</a></li>
-<li><a class="dropdown-item" href="../contactanos/contactanosf.html">Contáctanos</a></li>
-<li><a class="dropdown-item" href="../nosotros1/Notros/nosotros.html">Sobre Nosotros</a></li>
-<li><a class="dropdown-item" href="../como funciona/comofunciona.html">Cómo Comprar</a></li>
-<li><a class="dropdown-item" href="../blog/blog.html">Blog</a></li>
-<li><a class="dropdown-item" href="../comprar/comprar.html">Marketplace</a></li>
-<li><a class="dropdown-item" href="../incentivos/incentivos.html">Incentivos</a></li>
-
+<li><a class="dropdown-item" href="como-funciona\funciona.html">Cómo Funciona</a></li>
+<li><a class="dropdown-item" href="contactanos\contactanosf.html">Contáctanos</a></li>
+<li><a class="dropdown-item" href="nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
+<li><a class="dropdown-item" href="como-funciona\funciona.html">Cómo Comprar</a></li>
+<li><a class="dropdown-item" href="blog\blog.html">Blog</a></li>
+<li><a class="dropdown-item" href="comprar\comprar.html">Marketplace</a></li>
+<li><a class="dropdown-item" href="incentivos\incentivos.html">Incentivos</a></li>
 </ul>
 
 </div>
+
+</div>
+</header>
 
 
 <!-- CONTENIDO -->
@@ -140,6 +278,9 @@ margin-top: auto;
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="s.js"></script>
 
+</body>
+
+
 <!-- HERO -->
 
 <section class="hero position-relative">
@@ -147,7 +288,7 @@ margin-top: auto;
 <img src="img/1.png" class="img-fluid">
 
 <div class="hero-boton">
-  <a href="como-funciona" class="btn btn-success btn-lg">
+  <a href="registro\registro.html" class="btn btn-success btn-lg">
     Transforma tus residuos en oportunidades
   </a>
 </div>
