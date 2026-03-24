@@ -180,19 +180,35 @@ box-shadow:0 2px 10px rgba(0,0,0,0.1);
 
 /* espacio para que el contenido no quede debajo del header */
 main{
-margin-top:100px;
-.barra-superior{
-position: relative;
-z-index: 9999;
-}
-.hero{
-z-index:1;
+  margin-top:100px;
 }
 
 .barra-superior{
-z-index:9999;
-position:relative;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:9999;
+  background:white;
 }
+
+.hero{
+  z-index:1;
+}@media (max-width: 768px){
+
+  .logo{
+    height:50px !important;
+  }
+
+  .carrito-animado img{
+    width:28px !important;
+  }
+
+  .btn{
+    padding:4px 8px;
+    font-size:12px;
+  }
+
 }
 
 </style>
@@ -209,7 +225,7 @@ position:relative;
 
 <!-- Barra superior fija -->
 <header class="barra-superior">
-<div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
+<div class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-2 px-3">
 
 <div class="d-flex align-items-center gap-3">
 
@@ -223,8 +239,8 @@ position:relative;
 </button>
 
 <ul class="dropdown-menu">
-<li><a class="dropdown-item" href="registro\registro.html">Iniciar sesión</a></li>
-<li><a class="dropdown-item" href="registro/registro.html">Registrarse</a></li>
+<li><a class="dropdown-item" href="inicio-sesion\iniciodesesio.html">Iniciar sesión</a></li>
+<li><a class="dropdown-item" href="registro\registro.html">Registrarse</a></li>
 </ul>
 </div>
 
@@ -501,7 +517,8 @@ accesible para todos, impulsando la economía circular de manera innovadora y mo
 
       <!-- Columna: Logo a la izquierda -->
       <div class="col-md-2 mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start">
-        <img src="carrito/imagenes/lOGO.png"Logo" class="animate__animated animate__fadeInLeft" style="height: 90px;">
+<img src="carrito/imagenes/lOGO.png" alt="Logo"
+     class="img-fluid animate__animated animate__fadeInLeft logo-footer">
       </div>
 
       <!-- Columna: Contacto y Suscripción en el mismo recuadro -->
