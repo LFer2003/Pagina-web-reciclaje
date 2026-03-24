@@ -128,68 +128,63 @@
   </style>
 </head>
 <body>
-  <!-- Barra superior fija -->
-  <header class="barra-superior">
-    <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
-      <!-- IZQUIERDA: Logo + Inicio + Registro -->
-      <div class="d-flex align-items-center gap-3">
-      <a href="../index.html">
-          <img src="/como funciona final\img enc\lOGO.png" class="logo" alt="Logo" style="height: 80px;">
-        </a>
-        
-        <div class="dropdown">
-          <button class="btn btn-secondary btn-custom dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-            Únete
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="../inisioseccion/iniciodesesio.html">Iniciar sesión</a></li>
-      
-            <li><a class="dropdown-item" href="../registro/registro.html">Registrarse</a></li>
-       
-          </ul>
-        </div>
-      <!-- CARRITO -->
-      <a href="../carrito/carrito.html" class="position-relative carrito-animado">
-        <img src="/como funciona\imagenes\carro de compras.png" alt="Carrito de compras" style="width: 40px;">
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success badge-pulso">
-          3
-          <span class="visually-hidden">productos en el carrito</span>
-        </span>
-      </a>  
+ <!-- Barra superior fija -->
+<header class="barra-superior">
+<div class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-2 px-3">
+<div class="d-flex align-items-center gap-3">
+
+<a href="/index.html">
+<img src="../img/lOGO.png" class="logo" alt="Logo" style="height:80px;">
+</a>
+
+<div class="dropdown">
+<button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+Únete
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="../inicio-sesion/iniciodesesio.html">Iniciar sesión</a></li>
+<li><a class="dropdown-item" href="../registro/registro.html">Registrarse</a></li>
+</ul>
 </div>
 
-      <!-- DERECHA: Menú hamburguesa -->
-    
-<!-- MENÚ PARA PANTALLAS GRANDES -->
+<a href="carrito/carrito.html" class="position-relative carrito-animado">
+<img src="../img/carro de compras.png" style="width:40px;">
+<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+3
+</span>
+</a>
+
+</div>
 
 <ul class="nav d-none d-md-flex">
-  <li class="nav-item"><a class="nav-link text-dark" href="../como funciona final/funciona.html">Cómo Funciona</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="../contactanos/contactanosf.html">Contáctanos</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="../nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="../como funciona/comofunciona.html">Cómo Comprar</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="../blog/blog.html">Blog</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="../comprar/comprar.html">Marketplace</a></li>
-  <li class="nav-item"><a class="nav-link text-dark" href="../incentivos/incentivos.html">Incentivos</a></li>
-  </ul>
-  
+<li class="nav-item"><a class="nav-link text-dark" href="../como-funciona/funciona.html">Cómo Funciona</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="../contactanos/contactanosf.html">Contáctanos</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="../nosotros1/Notros/nosotros.html">Sobre Nosotros</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="../como-comprar/comofunciona.html">Cómo Comprar</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="../blog/blog.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="../comprar/comprar.html">Marketplace</a></li>
+<li class="nav-item"><a class="nav-link text-dark" href="../incentivos/incentivos.html">Incentivos</a></li>
+</ul>
 
-<!-- MENÚ HAMBURGUESA PARA PANTALLAS PEQUEÑAS -->
 <div class="dropdown d-md-none ms-auto">
-  <button class="btn btn-outline-dark dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-    ☰ Menú
-  </button>
-  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuDropdown">
-    <li><a class="dropdown-item" href="../como funciona final/funciona.html">Cómo Funciona</a></li>
-    <li><a class="dropdown-item" href="../contactanos/contactanosf.html">Contáctanos</a></li>
-    <li><a class="dropdown-item" href="../nosotros1\Notros\nosotros.html">Sobre Nosotros</a></li>
-    <li><a class="dropdown-item" href="../como funciona/comofunciona.html">Cómo Comprar</a></li>
-    <li><a class="dropdown-item" href="../blog/blog.html">Blog</a></li>
-    <li><a class="dropdown-item" href="../comprar/comprar.html">Marketplace</a></li>
-    <li><a class="dropdown-item" href="../incentivos/incentivos.html">Incentivos</a></li>
-  </ul>
-</div>    
-      </div>
-    </header>
+<button class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown">
+☰ Menú
+</button>
+
+<ul class="dropdown-menu dropdown-menu-end">
+<li><a class="dropdown-item" href="../como-funciona/funciona.html">Cómo Funciona</a></li>
+<li><a class="dropdown-item" href="../contactanos/contactanosf.html">Contáctanos</a></li>
+<li><a class="dropdown-item" href="../nosotros1/Notros/nosotros.html">Sobre Nosotros</a></li>
+<li><a class="dropdown-item" href="../como-funciona/funciona.html">Cómo Comprar</a></li>
+<li><a class="dropdown-item" href="../blog/blog.html">Blog</a></li>
+<li><a class="dropdown-item" href="../comprar/comprar.html">Marketplace</a></li>
+<li><a class="dropdown-item" href="../incentivos/incentivos.html">Incentivos</a></li>
+</ul>
+
+</div>
+
+</div>
+          </header>
 
     <section class="como-funciona">
       <div class="container text-center">
